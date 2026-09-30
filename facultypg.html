@@ -96,7 +96,7 @@
       };
     </script>
 </head>
-  <body class="bg-surface font-body-md text-on-surface antialiased">
+  <body class="bg-transparent font-body-md text-white antialiased">
     <!-- 1. Place it here: inside <body>, but OUTSIDE and ABOVE your header -->
   <div id="vanta-canvas" class="fixed inset-0 -z-10 h-screen w-full"></div>
   <div class="grain-overlay"></div>
@@ -111,7 +111,7 @@
     <!-- Page sections, text, cards -->
   </main>
     <header
-      class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
+      class="fixed top-0 left-0 w-full z-50 bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"
     >
       <div
         class="h-28 max-w-7xl mx-auto px-6 lg:px-12 flex flex-col justify-between"
@@ -119,32 +119,32 @@
         <div class="h-16 flex items-center justify-between">
           <div class="flex items-center gap-space-sm">
             <span
-              class="font-headline-sm text-headline-sm text-on-surface font-medium"
+              class="font-headline-sm text-headline-sm text-white font-medium"
               >Faculty Administration</span
             >
           </div>
           <div class="flex items-center gap-space-lg">
             <div class="hidden sm:flex items-center gap-space-xs">
               <span
-                class="material-symbols-outlined text-[18px] text-on-surface-variant"
+                class="material-symbols-outlined text-[18px] text-slate-300"
                 >calendar_today</span
               ><span
-                class="font-code-inline text-code-inline uppercase text-on-surface-variant"
+                class="font-code-inline text-code-inline uppercase text-slate-300"
                 >ACADEMIC TERM 2024-25</span
               >
             </div>
             <div class="flex items-center gap-space-md">
               <a
-                class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors"
+                class="font-label-md text-label-md text-slate-300 hover:text-white transition-colors"
                 data-path="login"
                 href="#"
                 >Logout</a
               >
               <div
-                class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"
+                class="w-8 h-8 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm flex items-center justify-center"
               >
                 <span
-                  class="material-symbols-outlined text-on-primary text-[18px]"
+                  class="material-symbols-outlined text-white text-[18px]"
                   >person</span
                 >
               </div>
@@ -157,50 +157,50 @@
           id="portal-nav-tabs"
         >
           <button
-            class="nav-tab h-full flex items-center gap-2 font-label-md text-label-md border-b-2 transition-colors whitespace-nowrap text-on-surface border-primary font-semibold"
+            class="nav-tab h-full flex items-center gap-2 font-label-md text-label-md border-b-2 transition-colors whitespace-nowrap text-white border-primary font-semibold"
             data-target="pending-view"
             id="nav-tab-pending"
             type="button"
           >
             Pending Approvals
             <span
-              class="text-[11px] font-code-inline px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-medium border border-surface-container-highest"
+              class="text-[11px] font-code-inline px-2 py-0.5 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white font-medium border border-white/10"
               id="badge-nav-pending"
               >6</span
             ></button
           ><button
-            class="nav-tab h-full flex items-center gap-2 font-label-md text-label-md hover:text-on-surface border-b-2 transition-colors whitespace-nowrap text-on-surface-variant border-transparent"
+            class="nav-tab h-full flex items-center gap-2 font-label-md text-label-md hover:text-white border-b-2 transition-colors whitespace-nowrap text-slate-300 border-transparent"
             data-target="approved-view"
             id="nav-tab-approved"
             type="button"
           >
             Approved Students
             <span
-              class="text-[11px] font-code-inline px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium border border-surface-container-highest"
+              class="text-[11px] font-code-inline px-2 py-0.5 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 font-medium border border-white/10"
               id="badge-nav-approved"
               >24</span
             ></button
           ><button
-            class="nav-tab h-full flex items-center gap-2 font-label-md text-label-md hover:text-on-surface border-b-2 transition-colors whitespace-nowrap text-on-surface-variant border-transparent"
+            class="nav-tab h-full flex items-center gap-2 font-label-md text-label-md hover:text-white border-b-2 transition-colors whitespace-nowrap text-slate-300 border-transparent"
             data-target="rejected-view"
             id="nav-tab-rejected"
             type="button"
           >
             Rejected Students
             <span
-              class="text-[11px] font-code-inline px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium border border-surface-container-highest"
+              class="text-[11px] font-code-inline px-2 py-0.5 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 font-medium border border-white/10"
               id="badge-nav-rejected"
               >3</span
             ></button
           ><button
-            class="nav-tab h-full flex items-center gap-2 font-label-md text-label-md hover:text-on-surface border-b-2 transition-colors whitespace-nowrap text-on-surface-variant border-transparent"
+            class="nav-tab h-full flex items-center gap-2 font-label-md text-label-md hover:text-white border-b-2 transition-colors whitespace-nowrap text-slate-300 border-transparent"
             data-target="activity-view"
             id="nav-tab-activity"
             type="button"
           >
             Activity Log
             <span
-              class="text-[11px] font-code-inline px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-medium border border-surface-container-highest"
+              class="text-[11px] font-code-inline px-2 py-0.5 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 font-medium border border-white/10"
               id="badge-nav-activity"
               >5</span
             >
@@ -209,12 +209,12 @@
       </div>
     </header>
     <main
-      class="w-full pt-28 bg-surface min-h-[calc(100vh-5rem)] max-w-7xl mx-auto px-6 lg:px-12"
+      class="w-full pt-28 bg-transparent min-h-[calc(100vh-5rem)] max-w-7xl mx-auto px-6 lg:px-12"
     >
       <div class="flex flex-col w-full pb-16">
         <!-- Notification Toast Banner -->
         <div
-          class="hidden my-4 p-3 rounded bg-surface-container-highest text-on-surface border border-outline-variant flex items-center justify-between text-body-sm font-body-sm shadow-sm transition-all"
+          class="hidden my-4 p-3 rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-highest text-white border border-outline-variant flex items-center justify-between text-body-sm font-body-sm shadow-sm transition-all"
           id="toast-banner"
         >
           <div class="flex items-center gap-2">
@@ -224,7 +224,7 @@
             <span id="toast-message" class="">Application status updated.</span>
           </div>
           <button
-            class="text-on-surface underline font-medium hover:opacity-80 ml-4 hidden text-body-sm"
+            class="text-white underline font-medium hover:opacity-80 ml-4 hidden text-body-sm"
             id="toast-undo"
           >
             Undo action
@@ -241,7 +241,7 @@
             >
               <div class="flex flex-col gap-y-1">
                 <span
-                  class="font-code-inline text-code-inline text-on-surface-variant uppercase tracking-widest flex items-center gap-2"
+                  class="font-code-inline text-code-inline text-slate-300 uppercase tracking-widest flex items-center gap-2"
                 >
                   <span class="">ADMINISTRATION PORTAL</span>
                   <span class="text-outline-variant font-bold">•</span>
@@ -249,12 +249,12 @@
                 </span>
                 <div class="flex items-center gap-3 mt-1">
                   <h1
-                    class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-medium"
+                    class="font-headline-lg text-headline-lg text-white tracking-tight font-medium"
                   >
                     Pending Student Approvals
                   </h1>
                   <span
-                    class="font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-2.5 py-0.5 rounded-full border border-surface-container-highest"
+                    class="font-label-sm text-label-sm bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 px-2.5 py-0.5 rounded-full border border-white/10"
                     id="queue-counter-badge"
                   >
                     Showing <span id="queue-count" class="">6</span> pending
@@ -264,17 +264,17 @@
               </div>
               <div class="flex items-center gap-3">
                 <button
-                  class="h-9 px-4 rounded bg-surface-container-lowest text-on-surface border border-surface-container-highest hover:bg-surface-container hover:border-outline-variant transition-colors flex items-center gap-2 font-label-md text-label-md font-medium shadow-sm"
+                  class="h-9 px-4 rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white border border-white/10 hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl hover:border-outline-variant transition-colors flex items-center gap-2 font-label-md text-label-md font-medium shadow-sm"
                   type="button"
                 >
                   <span
-                    class="material-symbols-outlined text-[18px] text-secondary"
+                    class="material-symbols-outlined text-[18px] text-slate-400"
                     >file_download</span
                   >
                   Export CSV
                 </button>
                 <button
-                  class="h-9 px-4 rounded bg-primary text-on-primary hover:bg-surface-container-highest hover:text-on-surface transition-colors flex items-center gap-2 font-label-md text-label-md font-medium shadow-sm"
+                  class="h-9 px-4 rounded bg-white/10 text-white border border-white/20 hover:bg-white/20 hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-highest hover:text-white transition-colors flex items-center gap-2 font-label-md text-label-md font-medium shadow-sm"
                   id="bulk-review-btn"
                   type="button"
                 >
@@ -287,64 +287,59 @@
             </div>
             <!-- Filter and search toolbar -->
             <div
-              class="bg-surface-container-lowest rounded-lg border border-surface-container-highest p-3 flex flex-col lg:flex-row gap-3 items-stretch lg:items-center justify-between shadow-sm"
+              class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-lg border border-white/10 p-3 flex flex-col lg:flex-row gap-3 items-stretch lg:items-center justify-between shadow-sm"
             >
               <div class="flex flex-1 flex-col sm:flex-row items-center gap-3">
                 <div class="relative w-full sm:max-w-md">
                   <span
-                    class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-on-surface-variant"
+                    class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-slate-300"
                     >search</span
                   >
                   <input
-                    class="w-full h-9 pl-9 pr-3 text-on-surface bg-surface border border-surface-container-highest rounded text-body-sm font-body-sm placeholder:text-on-secondary-container focus:outline-none focus:border-on-surface transition-colors"
+                    class="w-full h-9 pl-9 pr-3 text-white bg-transparent border border-white/10 rounded text-body-sm font-body-sm placeholder:text-slate-400 focus:outline-none focus:border-white/50 transition-colors"
                     id="student-search"
                     placeholder="Search by student name or enrollment number..."
                     type="text"
                   />
                 </div>
                 <div class="flex items-center gap-2 w-full sm:w-auto">
-                  <select
-                    class="h-9 px-3 bg-surface border border-surface-container-highest rounded text-body-sm font-body-sm text-on-surface focus:outline-none focus:border-on-surface transition-colors"
-                    id="branch-filter"
-                  >
-                    <option value="ALL">All Branches</option>
-                    <option value="C.S.E">C.S.E</option>
-                    <option value="AI/ML">AI/ML</option>
-                    <option value="DATASCIENCE">DATASCIENCE</option>
-                  </select>
-                  <select
-                    class="h-9 px-3 bg-surface border border-surface-container-highest rounded text-body-sm font-body-sm text-on-surface focus:outline-none focus:border-on-surface transition-colors"
-                    id="division-filter"
-                  >
-                    <option value="ALL">All Divisions</option>
-                    <option value="D1">D1</option>
-                    <option value="D2">D2</option>
-                    <option value="D3">D3</option>
-                    <option value="D4">D4</option>
-                    <option value="D5">D5</option>
-                    <option value="D6">D6</option>
-                  </select>
+                  <select class="h-9 px-3 bg-slate-900/60 border border-white/10 backdrop-blur-xl rounded text-white focus:outline-none focus:border-white/50 transition-colors [&>option]:bg-slate-900 [&>option]:text-white" id="branch-filter">
+  <option value="ALL">All Branches</option>
+  <option value="C.S.E">C.S.E</option>
+  <option value="AI/ML">AI/ML</option>
+  <option value="DATASCIENCE">DATASCIENCE</option>
+</select>
+
+<select class="h-9 px-3 bg-slate-900/60 border border-white/10 backdrop-blur-xl rounded text-white focus:outline-none focus:border-white/50 transition-colors [&>option]:bg-slate-900 [&>option]:text-white" id="division-filter">
+  <option value="ALL">All Divisions</option>
+  <option value="D1">D1</option>
+  <option value="D2">D2</option>
+  <option value="D3">D3</option>
+  <option value="D4">D4</option>
+  <option value="D5">D5</option>
+  <option value="D6">D6</option>
+</select>
                 </div>
               </div>
               <div
-                class="flex items-center gap-1.5 p-1 bg-surface-container rounded-md"
+                class="flex items-center gap-1.5 p-1 bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-md"
               >
                 <button
-                  class="filter-tab px-3 py-1 rounded text-body-sm font-label-md font-medium text-on-surface bg-surface-container-lowest border border-surface-container-highest shadow-sm transition-all"
+                  class="filter-tab px-3 py-1 rounded text-body-sm font-label-md font-medium text-white bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl border border-white/10 shadow-sm transition-all"
                   data-filter="all"
                   id="filter-all"
                 >
                   All Pending (6)
                 </button>
                 <button
-                  class="filter-tab px-3 py-1 rounded text-body-sm font-label-md font-medium text-on-surface-variant hover:text-on-surface transition-all"
+                  class="filter-tab px-3 py-1 rounded text-body-sm font-label-md font-medium text-slate-300 hover:text-white transition-all"
                   data-filter="flagged"
                   id="filter-flagged"
                 >
                   Flagged (1)
                 </button>
                 <button
-                  class="filter-tab px-3 py-1 rounded text-body-sm font-label-md font-medium text-on-surface-variant hover:text-on-surface transition-all"
+                  class="filter-tab px-3 py-1 rounded text-body-sm font-label-md font-medium text-slate-300 hover:text-white transition-all"
                   data-filter="priority"
                   id="filter-priority"
                 >
@@ -355,13 +350,13 @@
           </div>
           <!-- Main Content Area: Data Table Card -->
           <div
-            class="w-full bg-surface-container-lowest rounded-lg border border-surface-container-highest shadow-sm overflow-hidden flex flex-col"
+            class="w-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-lg border border-white/10 shadow-sm overflow-hidden flex flex-col"
           >
             <div class="overflow-x-auto">
               <table class="w-full text-left border-collapse">
                 <thead>
                   <tr
-                    class="bg-surface-container-low border-b border-surface-container-highest text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider"
+                    class="bg-slate-800/40 border border-white/5 border-b border-white/10 text-slate-300 font-label-sm text-label-sm uppercase tracking-wider"
                   >
                     <th class="py-3 px-4 w-12 text-center">
                       <input
@@ -381,12 +376,12 @@
                   </tr>
                 </thead>
                 <tbody
-                  class="divide-y divide-surface-container text-body-sm font-body-sm text-on-surface"
+                  class="divide-y divide-surface-container text-body-sm font-body-sm text-white"
                   id="applications-table-body"
                 >
                   <!-- Row 1 -->
                   <tr
-                    class="hover:bg-surface-container-low transition-colors group"
+                    class="hover:bg-slate-800/40 border border-white/5 transition-colors group"
                     data-branch="C.S.E"
                     data-division="D1"
                     data-flagged="false"
@@ -403,16 +398,16 @@
                     <td class="py-3.5 px-4">
                       <div class="flex items-center gap-3">
                         <div
-                          class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-code-inline text-code-inline font-medium text-on-surface"
+                          class="w-8 h-8 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl flex items-center justify-center font-code-inline text-code-inline font-medium text-white"
                         >
                           AS
                         </div>
                         <div class="flex flex-col min-w-0">
-                          <span class="font-medium text-on-surface truncate"
+                          <span class="font-medium text-white truncate"
                             >Aarav Sharma</span
                           >
                           <span
-                            class="text-on-surface-variant text-[12px] truncate"
+                            class="text-slate-300 text-[12px] truncate"
                             >aarav.s@college.edu</span
                           >
                         </div>
@@ -420,22 +415,22 @@
                     </td>
                     <td class="py-3.5 px-4">
                       <span
-                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-surface-container text-on-surface"
+                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white"
                         >D1</span
                       >
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white"
                     >
                       C.S.E
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface tracking-wider"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white tracking-wider"
                     >
                       21BECE30041
                     </td>
                     <td
-                      class="py-3.5 px-4 text-on-surface-variant whitespace-nowrap"
+                      class="py-3.5 px-4 text-slate-300 whitespace-nowrap"
                     >
                       Today, 09:20 AM
                     </td>
@@ -460,7 +455,7 @@
                           Reject
                         </button>
                         <button
-                          class="w-7 h-7 flex items-center justify-center rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface"
+                          class="w-7 h-7 flex items-center justify-center rounded hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 hover:text-white"
                           title="Registration Card"
                         >
                           <span class="material-symbols-outlined text-[18px]"
@@ -472,7 +467,7 @@
                   </tr>
                   <!-- Row 2 -->
                   <tr
-                    class="hover:bg-surface-container-low transition-colors group"
+                    class="hover:bg-slate-800/40 border border-white/5 transition-colors group"
                     data-branch="AI/ML"
                     data-division="D2"
                     data-flagged="false"
@@ -489,16 +484,16 @@
                     <td class="py-3.5 px-4">
                       <div class="flex items-center gap-3">
                         <div
-                          class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-code-inline text-code-inline font-medium text-on-surface"
+                          class="w-8 h-8 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl flex items-center justify-center font-code-inline text-code-inline font-medium text-white"
                         >
                           PP
                         </div>
                         <div class="flex flex-col min-w-0">
-                          <span class="font-medium text-on-surface truncate"
+                          <span class="font-medium text-white truncate"
                             >Priya Patel</span
                           >
                           <span
-                            class="text-on-surface-variant text-[12px] truncate"
+                            class="text-slate-300 text-[12px] truncate"
                             >priya.p@college.edu</span
                           >
                         </div>
@@ -506,22 +501,22 @@
                     </td>
                     <td class="py-3.5 px-4">
                       <span
-                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-surface-container text-on-surface"
+                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white"
                         >D2</span
                       >
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white"
                     >
                       AI/ML
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface tracking-wider"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white tracking-wider"
                     >
                       21BECE30089
                     </td>
                     <td
-                      class="py-3.5 px-4 text-on-surface-variant whitespace-nowrap"
+                      class="py-3.5 px-4 text-slate-300 whitespace-nowrap"
                     >
                       Today, 08:45 AM
                     </td>
@@ -546,7 +541,7 @@
                           Reject
                         </button>
                         <button
-                          class="w-7 h-7 flex items-center justify-center rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface"
+                          class="w-7 h-7 flex items-center justify-center rounded hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 hover:text-white"
                           title="Registration Card"
                         >
                           <span class="material-symbols-outlined text-[18px]"
@@ -558,7 +553,7 @@
                   </tr>
                   <!-- Row 3 -->
                   <tr
-                    class="hover:bg-surface-container-low transition-colors group"
+                    class="hover:bg-slate-800/40 border border-white/5 transition-colors group"
                     data-branch="DATASCIENCE"
                     data-division="D3"
                     data-flagged="true"
@@ -575,16 +570,16 @@
                     <td class="py-3.5 px-4">
                       <div class="flex items-center gap-3">
                         <div
-                          class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-code-inline text-code-inline font-medium text-on-surface"
+                          class="w-8 h-8 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl flex items-center justify-center font-code-inline text-code-inline font-medium text-white"
                         >
                           RM
                         </div>
                         <div class="flex flex-col min-w-0">
-                          <span class="font-medium text-on-surface truncate"
+                          <span class="font-medium text-white truncate"
                             >Rohan Mehta</span
                           >
                           <span
-                            class="text-on-surface-variant text-[12px] truncate"
+                            class="text-slate-300 text-[12px] truncate"
                             >rohan.m@college.edu</span
                           >
                         </div>
@@ -592,22 +587,22 @@
                     </td>
                     <td class="py-3.5 px-4">
                       <span
-                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-surface-container text-on-surface"
+                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white"
                         >D3</span
                       >
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white"
                     >
                       DATASCIENCE
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface tracking-wider"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white tracking-wider"
                     >
                       22BECE40012
                     </td>
                     <td
-                      class="py-3.5 px-4 text-on-surface-variant whitespace-nowrap"
+                      class="py-3.5 px-4 text-slate-300 whitespace-nowrap"
                     >
                       Yesterday, 04:15 PM
                     </td>
@@ -632,7 +627,7 @@
                           Reject
                         </button>
                         <button
-                          class="w-7 h-7 flex items-center justify-center rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface"
+                          class="w-7 h-7 flex items-center justify-center rounded hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 hover:text-white"
                           title="Registration Card"
                         >
                           <span class="material-symbols-outlined text-[18px]"
@@ -644,7 +639,7 @@
                   </tr>
                   <!-- Row 4 -->
                   <tr
-                    class="hover:bg-surface-container-low transition-colors group"
+                    class="hover:bg-slate-800/40 border border-white/5 transition-colors group"
                     data-branch="AI/ML"
                     data-division="D4"
                     data-flagged="false"
@@ -661,16 +656,16 @@
                     <td class="py-3.5 px-4">
                       <div class="flex items-center gap-3">
                         <div
-                          class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-code-inline text-code-inline font-medium text-on-surface"
+                          class="w-8 h-8 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl flex items-center justify-center font-code-inline text-code-inline font-medium text-white"
                         >
                           AI
                         </div>
                         <div class="flex flex-col min-w-0">
-                          <span class="font-medium text-on-surface truncate"
+                          <span class="font-medium text-white truncate"
                             >Ananya Iyer</span
                           >
                           <span
-                            class="text-on-surface-variant text-[12px] truncate"
+                            class="text-slate-300 text-[12px] truncate"
                             >ananya.i@college.edu</span
                           >
                         </div>
@@ -678,22 +673,22 @@
                     </td>
                     <td class="py-3.5 px-4">
                       <span
-                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-surface-container text-on-surface"
+                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white"
                         >D4</span
                       >
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white"
                     >
                       AI/ML
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface tracking-wider"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white tracking-wider"
                     >
                       21BEAI10005
                     </td>
                     <td
-                      class="py-3.5 px-4 text-on-surface-variant whitespace-nowrap"
+                      class="py-3.5 px-4 text-slate-300 whitespace-nowrap"
                     >
                       Yesterday, 02:40 PM
                     </td>
@@ -718,7 +713,7 @@
                           Reject
                         </button>
                         <button
-                          class="w-7 h-7 flex items-center justify-center rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface"
+                          class="w-7 h-7 flex items-center justify-center rounded hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 hover:text-white"
                           title="Registration Card"
                         >
                           <span class="material-symbols-outlined text-[18px]"
@@ -730,7 +725,7 @@
                   </tr>
                   <!-- Row 5 -->
                   <tr
-                    class="hover:bg-surface-container-low transition-colors group"
+                    class="hover:bg-slate-800/40 border border-white/5 transition-colors group"
                     data-branch="C.S.E"
                     data-division="D5"
                     data-flagged="false"
@@ -747,16 +742,16 @@
                     <td class="py-3.5 px-4">
                       <div class="flex items-center gap-3">
                         <div
-                          class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-code-inline text-code-inline font-medium text-on-surface"
+                          class="w-8 h-8 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl flex items-center justify-center font-code-inline text-code-inline font-medium text-white"
                         >
                           DV
                         </div>
                         <div class="flex flex-col min-w-0">
-                          <span class="font-medium text-on-surface truncate"
+                          <span class="font-medium text-white truncate"
                             >Devansh Verma</span
                           >
                           <span
-                            class="text-on-surface-variant text-[12px] truncate"
+                            class="text-slate-300 text-[12px] truncate"
                             >devansh.v@college.edu</span
                           >
                         </div>
@@ -764,22 +759,22 @@
                     </td>
                     <td class="py-3.5 px-4">
                       <span
-                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-surface-container text-on-surface"
+                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white"
                         >D5</span
                       >
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white"
                     >
                       C.S.E
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface tracking-wider"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white tracking-wider"
                     >
                       21BETA20034
                     </td>
                     <td
-                      class="py-3.5 px-4 text-on-surface-variant whitespace-nowrap"
+                      class="py-3.5 px-4 text-slate-300 whitespace-nowrap"
                     >
                       Yesterday, 11:15 AM
                     </td>
@@ -804,7 +799,7 @@
                           Reject
                         </button>
                         <button
-                          class="w-7 h-7 flex items-center justify-center rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface"
+                          class="w-7 h-7 flex items-center justify-center rounded hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 hover:text-white"
                           title="Registration Card"
                         >
                           <span class="material-symbols-outlined text-[18px]"
@@ -816,7 +811,7 @@
                   </tr>
                   <!-- Row 6 -->
                   <tr
-                    class="hover:bg-surface-container-low transition-colors group"
+                    class="hover:bg-slate-800/40 border border-white/5 transition-colors group"
                     data-branch="DATASCIENCE"
                     data-division="D6"
                     data-flagged="false"
@@ -833,16 +828,16 @@
                     <td class="py-3.5 px-4">
                       <div class="flex items-center gap-3">
                         <div
-                          class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-code-inline text-code-inline font-medium text-on-surface"
+                          class="w-8 h-8 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl flex items-center justify-center font-code-inline text-code-inline font-medium text-white"
                         >
                           NG
                         </div>
                         <div class="flex flex-col min-w-0">
-                          <span class="font-medium text-on-surface truncate"
+                          <span class="font-medium text-white truncate"
                             >Neha Gupta</span
                           >
                           <span
-                            class="text-on-surface-variant text-[12px] truncate"
+                            class="text-slate-300 text-[12px] truncate"
                             >neha.g@college.edu</span
                           >
                         </div>
@@ -850,22 +845,22 @@
                     </td>
                     <td class="py-3.5 px-4">
                       <span
-                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-surface-container text-on-surface"
+                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white"
                         >D6</span
                       >
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white"
                     >
                       DATASCIENCE
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface tracking-wider"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white tracking-wider"
                     >
                       22BETA20078
                     </td>
                     <td
-                      class="py-3.5 px-4 text-on-surface-variant whitespace-nowrap"
+                      class="py-3.5 px-4 text-slate-300 whitespace-nowrap"
                     >
                       Oct 24, 05:00 PM
                     </td>
@@ -890,7 +885,7 @@
                           Reject
                         </button>
                         <button
-                          class="w-7 h-7 flex items-center justify-center rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface"
+                          class="w-7 h-7 flex items-center justify-center rounded hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 hover:text-white"
                           title="Registration Card"
                         >
                           <span class="material-symbols-outlined text-[18px]"
@@ -905,29 +900,29 @@
             </div>
             <!-- Table Footer -->
             <div
-              class="p-4 bg-surface-container-lowest border-t border-surface-container-highest flex flex-col sm:flex-row items-center justify-between gap-4 font-label-sm text-label-sm text-on-surface-variant"
+              class="p-4 bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 font-label-sm text-label-sm text-slate-300"
             >
               <div class="flex items-center gap-4">
                 <span class=""
                   >Showing <span id="visible-count" class="">1-6</span> of
                   <span id="total-count" class="">6</span> pending applications
                   • Selected:
-                  <span class="font-medium text-on-surface" id="selected-count"
+                  <span class="font-medium text-white" id="selected-count"
                     >0</span
                   ></span
                 >
                 <div
-                  class="flex items-center gap-2 border-l border-surface-container-highest pl-4"
+                  class="flex items-center gap-2 border-l border-white/10 pl-4"
                 >
                   <button
-                    class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant opacity-50 cursor-not-allowed hover:bg-surface-container-high transition-colors font-medium"
+                    class="px-2.5 py-1 rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 opacity-50 cursor-not-allowed hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-high transition-colors font-medium"
                     disabled=""
                     id="batch-approve"
                   >
                     Approve Selected
                   </button>
                   <button
-                    class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant opacity-50 cursor-not-allowed hover:bg-surface-container-high transition-colors font-medium"
+                    class="px-2.5 py-1 rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 opacity-50 cursor-not-allowed hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-high transition-colors font-medium"
                     disabled=""
                     id="batch-reject"
                   >
@@ -937,7 +932,7 @@
               </div>
               <div class="flex items-center gap-1">
                 <button
-                  class="w-8 h-8 rounded border border-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors disabled:opacity-40"
+                  class="w-8 h-8 rounded border border-white/10 flex items-center justify-center text-slate-300 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors disabled:opacity-40"
                   disabled=""
                 >
                   <span class="material-symbols-outlined text-[16px]"
@@ -945,11 +940,11 @@
                   >
                 </button>
                 <span
-                  class="px-3 font-code-inline text-code-inline text-on-surface"
+                  class="px-3 font-code-inline text-code-inline text-white"
                   >Page 1 of 1</span
                 >
                 <button
-                  class="w-8 h-8 rounded border border-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors disabled:opacity-40"
+                  class="w-8 h-8 rounded border border-white/10 flex items-center justify-center text-slate-300 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors disabled:opacity-40"
                   disabled=""
                 >
                   <span class="material-symbols-outlined text-[16px]"
@@ -964,10 +959,10 @@
             class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8"
           >
             <div
-              class="bg-surface-container-lowest border border-surface-container-highest rounded-lg p-5 flex flex-col justify-between shadow-sm"
+              class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl border border-white/10 rounded-lg p-5 flex flex-col justify-between shadow-sm"
             >
               <div
-                class="flex items-center justify-between text-on-surface-variant"
+                class="flex items-center justify-between text-slate-300"
               >
                 <span
                   class="font-code-inline text-code-inline uppercase tracking-wider text-[11px] font-medium"
@@ -979,24 +974,24 @@
               </div>
               <div class="my-3">
                 <div
-                  class="font-headline-md text-headline-md font-semibold text-on-surface tracking-tight"
+                  class="font-headline-md text-headline-md font-semibold text-white tracking-tight"
                   id="metric-pending"
                 >
                   6 Applications
                 </div>
               </div>
               <div
-                class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1"
+                class="font-label-sm text-label-sm text-slate-300 flex items-center gap-1"
               >
-                <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm"></span>
                 Requires review
               </div>
             </div>
             <div
-              class="bg-surface-container-lowest border border-surface-container-highest rounded-lg p-5 flex flex-col justify-between shadow-sm"
+              class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl border border-white/10 rounded-lg p-5 flex flex-col justify-between shadow-sm"
             >
               <div
-                class="flex items-center justify-between text-on-surface-variant"
+                class="flex items-center justify-between text-slate-300"
               >
                 <span
                   class="font-code-inline text-code-inline uppercase tracking-wider text-[11px] font-medium"
@@ -1008,16 +1003,16 @@
               </div>
               <div class="my-3">
                 <div
-                  class="font-headline-md text-headline-md font-semibold text-on-surface tracking-tight"
+                  class="font-headline-md text-headline-md font-semibold text-white tracking-tight"
                   id="metric-verified"
                 >
                   24 Students
                 </div>
               </div>
               <div
-                class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1"
+                class="font-label-sm text-label-sm text-slate-300 flex items-center gap-1"
               >
-                <span class="text-on-surface font-medium">+18%</span> vs
+                <span class="text-white font-medium">+18%</span> vs
                 yesterday
               </div>
             </div>
@@ -1033,7 +1028,7 @@
             >
               <div class="flex flex-col gap-y-1">
                 <span
-                  class="font-code-inline text-code-inline text-on-surface-variant uppercase tracking-widest flex items-center gap-2"
+                  class="font-code-inline text-code-inline text-slate-300 uppercase tracking-widest flex items-center gap-2"
                 >
                   <span class="">REGISTRATION RECORDS</span>
                   <span class="text-outline-variant font-bold">•</span>
@@ -1041,12 +1036,12 @@
                 </span>
                 <div class="flex items-center gap-3 mt-1">
                   <h1
-                    class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-medium"
+                    class="font-headline-lg text-headline-lg text-white tracking-tight font-medium"
                   >
                     Approved Students
                   </h1>
                   <span
-                    class="font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-2.5 py-0.5 rounded-full border border-surface-container-highest"
+                    class="font-label-sm text-label-sm bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 px-2.5 py-0.5 rounded-full border border-white/10"
                   >
                     24 enrolled candidates
                   </span>
@@ -1054,11 +1049,11 @@
               </div>
               <div class="flex items-center gap-3">
                 <button
-                  class="h-9 px-4 rounded bg-surface-container-lowest text-on-surface border border-surface-container-highest hover:bg-surface-container transition-colors flex items-center gap-2 font-label-md text-label-md font-medium shadow-sm"
+                  class="h-9 px-4 rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white border border-white/10 hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors flex items-center gap-2 font-label-md text-label-md font-medium shadow-sm"
                   type="button"
                 >
                   <span
-                    class="material-symbols-outlined text-[18px] text-secondary"
+                    class="material-symbols-outlined text-[18px] text-slate-400"
                     >file_download</span
                   >
                   Export Roster (.xlsx)
@@ -1067,32 +1062,29 @@
             </div>
             <!-- Approved Table Toolbar -->
             <div
-              class="bg-surface-container-lowest rounded-lg border border-surface-container-highest p-3 flex flex-col sm:flex-row gap-3 items-center justify-between shadow-sm"
+              class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-lg border border-white/10 p-3 flex flex-col sm:flex-row gap-3 items-center justify-between shadow-sm"
             >
               <div class="relative w-full sm:max-w-md">
                 <span
-                  class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-on-surface-variant"
+                  class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-slate-300"
                   >search</span
                 >
                 <input
-                  class="w-full h-9 pl-9 pr-3 text-on-surface bg-surface border border-surface-container-highest rounded text-body-sm placeholder:text-on-secondary-container focus:outline-none focus:border-on-surface"
+                  class="w-full h-9 pl-9 pr-3 text-white bg-transparent border border-white/10 rounded text-body-sm placeholder:text-slate-400 focus:outline-none focus:border-white/50"
                   id="approved-search"
                   placeholder="Search approved students..."
                   type="text"
                 />
               </div>
               <div class="flex items-center gap-2 w-full sm:w-auto">
-                <select
-                  class="h-9 px-3 bg-surface border border-surface-container-highest rounded text-body-sm text-on-surface focus:outline-none focus:border-on-surface"
-                  id="approved-branch-filter"
-                >
-                  <option value="ALL">All Branches</option>
-                  <option value="C.S.E">C.S.E</option>
-                  <option value="AI/ML">AI/ML</option>
-                  <option value="DATASCIENCE">DATASCIENCE</option>
-                </select>
+                <select class="h-9 px-3 bg-slate-900/60 border border-white/10 backdrop-blur-xl rounded text-white focus:outline-none focus:border-white/50 transition-colors [&>option]:bg-slate-900 [&>option]:text-white" id="branch-filter">
+  <option value="ALL">All Branches</option>
+  <option value="C.S.E">C.S.E</option>
+  <option value="AI/ML">AI/ML</option>
+  <option value="DATASCIENCE">DATASCIENCE</option>
+</select>
                 <span
-                  class="text-xs text-on-surface-variant font-code-inline px-2"
+                  class="text-xs text-slate-300 font-code-inline px-2"
                   >Sorted by Date (Recent)</span
                 >
               </div>
@@ -1100,13 +1092,13 @@
           </div>
           <!-- Approved Students Table Card -->
           <div
-            class="w-full bg-surface-container-lowest rounded-lg border border-surface-container-highest shadow-sm overflow-hidden flex flex-col"
+            class="w-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-lg border border-white/10 shadow-sm overflow-hidden flex flex-col"
           >
             <div class="overflow-x-auto">
               <table class="w-full text-left border-collapse">
                 <thead>
                   <tr
-                    class="bg-surface-container-low border-b border-surface-container-highest text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider"
+                    class="bg-slate-800/40 border border-white/5 border-b border-white/10 text-slate-300 font-label-sm text-label-sm uppercase tracking-wider"
                   >
                     <th class="py-3 px-4 font-medium">Student Name</th>
                     <th class="py-3 px-4 font-medium">Division</th>
@@ -1121,22 +1113,22 @@
                   </tr>
                 </thead>
                 <tbody
-                  class="divide-y divide-surface-container text-body-sm font-body-sm text-on-surface"
+                  class="divide-y divide-surface-container text-body-sm font-body-sm text-white"
                   id="approved-table-body"
                 >
-                  <tr class="hover:bg-surface-container-low transition-colors">
+                  <tr class="hover:bg-slate-800/40 border border-white/5 transition-colors">
                     <td class="py-3.5 px-4">
                       <div class="flex items-center gap-3">
                         <div
-                          class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-code-inline text-code-inline font-medium text-on-surface"
+                          class="w-8 h-8 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl flex items-center justify-center font-code-inline text-code-inline font-medium text-white"
                         >
                           TK
                         </div>
                         <div class="flex flex-col min-w-0">
-                          <span class="font-medium text-on-surface"
+                          <span class="font-medium text-white"
                             >Tanvi Kulkarni</span
                           >
-                          <span class="text-on-surface-variant text-[12px]"
+                          <span class="text-slate-300 text-[12px]"
                             >tanvi.k@college.edu</span
                           >
                         </div>
@@ -1144,26 +1136,26 @@
                     </td>
                     <td class="py-3.5 px-4">
                       <span
-                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-surface-container text-on-surface"
+                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white"
                         >D1</span
                       >
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white"
                     >
                       C.S.E
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface tracking-wider"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white tracking-wider"
                     >
                       21BECE30018
                     </td>
                     <td
-                      class="py-3.5 px-4 text-on-surface-variant whitespace-nowrap"
+                      class="py-3.5 px-4 text-slate-300 whitespace-nowrap"
                     >
                       Today, 10:14 AM
                     </td>
-                    <td class="py-3.5 px-4 font-medium text-on-surface text-xs">
+                    <td class="py-3.5 px-4 font-medium text-white text-xs">
                       Prof. S. Kulkarni
                     </td>
                     <td class="py-3.5 px-4">
@@ -1179,7 +1171,7 @@
                     <td class="py-3.5 px-4 text-right pr-6">
                       <div class="flex items-center justify-end gap-2">
                         <button
-                          class="px-2.5 py-1 text-xs font-medium border border-surface-container-highest rounded hover:bg-surface-container text-on-surface transition-colors"
+                          class="px-2.5 py-1 text-xs font-medium border border-white/10 rounded hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white transition-colors"
                         >
                           View Details
                         </button>
@@ -1196,19 +1188,19 @@
                       </div>
                     </td>
                   </tr>
-                  <tr class="hover:bg-surface-container-low transition-colors">
+                  <tr class="hover:bg-slate-800/40 border border-white/5 transition-colors">
                     <td class="py-3.5 px-4">
                       <div class="flex items-center gap-3">
                         <div
-                          class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-code-inline text-code-inline font-medium text-on-surface"
+                          class="w-8 h-8 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl flex items-center justify-center font-code-inline text-code-inline font-medium text-white"
                         >
                           SD
                         </div>
                         <div class="flex flex-col min-w-0">
-                          <span class="font-medium text-on-surface"
+                          <span class="font-medium text-white"
                             >Siddharth Das</span
                           >
-                          <span class="text-on-surface-variant text-[12px]"
+                          <span class="text-slate-300 text-[12px]"
                             >siddharth.d@college.edu</span
                           >
                         </div>
@@ -1216,26 +1208,26 @@
                     </td>
                     <td class="py-3.5 px-4">
                       <span
-                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-surface-container text-on-surface"
+                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white"
                         >D2</span
                       >
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white"
                     >
                       AI/ML
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface tracking-wider"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white tracking-wider"
                     >
                       21BEAI10045
                     </td>
                     <td
-                      class="py-3.5 px-4 text-on-surface-variant whitespace-nowrap"
+                      class="py-3.5 px-4 text-slate-300 whitespace-nowrap"
                     >
                       Today, 09:05 AM
                     </td>
-                    <td class="py-3.5 px-4 font-medium text-on-surface text-xs">
+                    <td class="py-3.5 px-4 font-medium text-white text-xs">
                       Dr. Priya Nair
                     </td>
                     <td class="py-3.5 px-4">
@@ -1251,7 +1243,7 @@
                     <td class="py-3.5 px-4 text-right pr-6">
                       <div class="flex items-center justify-end gap-2">
                         <button
-                          class="px-2.5 py-1 text-xs font-medium border border-surface-container-highest rounded hover:bg-surface-container text-on-surface transition-colors"
+                          class="px-2.5 py-1 text-xs font-medium border border-white/10 rounded hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white transition-colors"
                         >
                           View Details
                         </button>
@@ -1268,19 +1260,19 @@
                       </div>
                     </td>
                   </tr>
-                  <tr class="hover:bg-surface-container-low transition-colors">
+                  <tr class="hover:bg-slate-800/40 border border-white/5 transition-colors">
                     <td class="py-3.5 px-4">
                       <div class="flex items-center gap-3">
                         <div
-                          class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-code-inline text-code-inline font-medium text-on-surface"
+                          class="w-8 h-8 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl flex items-center justify-center font-code-inline text-code-inline font-medium text-white"
                         >
                           RJ
                         </div>
                         <div class="flex flex-col min-w-0">
-                          <span class="font-medium text-on-surface"
+                          <span class="font-medium text-white"
                             >Rishabh Joshi</span
                           >
-                          <span class="text-on-surface-variant text-[12px]"
+                          <span class="text-slate-300 text-[12px]"
                             >rishabh.j@college.edu</span
                           >
                         </div>
@@ -1288,26 +1280,26 @@
                     </td>
                     <td class="py-3.5 px-4">
                       <span
-                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-surface-container text-on-surface"
+                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white"
                         >D4</span
                       >
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white"
                     >
                       DATASCIENCE
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface tracking-wider"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white tracking-wider"
                     >
                       22BETA20091
                     </td>
                     <td
-                      class="py-3.5 px-4 text-on-surface-variant whitespace-nowrap"
+                      class="py-3.5 px-4 text-slate-300 whitespace-nowrap"
                     >
                       Yesterday, 06:10 PM
                     </td>
-                    <td class="py-3.5 px-4 font-medium text-on-surface text-xs">
+                    <td class="py-3.5 px-4 font-medium text-white text-xs">
                       Prof. S. Kulkarni
                     </td>
                     <td class="py-3.5 px-4">
@@ -1323,7 +1315,7 @@
                     <td class="py-3.5 px-4 text-right pr-6">
                       <div class="flex items-center justify-end gap-2">
                         <button
-                          class="px-2.5 py-1 text-xs font-medium border border-surface-container-highest rounded hover:bg-surface-container text-on-surface transition-colors"
+                          class="px-2.5 py-1 text-xs font-medium border border-white/10 rounded hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white transition-colors"
                         >
                           View Details
                         </button>
@@ -1340,19 +1332,19 @@
                       </div>
                     </td>
                   </tr>
-                  <tr class="hover:bg-surface-container-low transition-colors">
+                  <tr class="hover:bg-slate-800/40 border border-white/5 transition-colors">
                     <td class="py-3.5 px-4">
                       <div class="flex items-center gap-3">
                         <div
-                          class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-code-inline text-code-inline font-medium text-on-surface"
+                          class="w-8 h-8 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl flex items-center justify-center font-code-inline text-code-inline font-medium text-white"
                         >
                           MK
                         </div>
                         <div class="flex flex-col min-w-0">
-                          <span class="font-medium text-on-surface"
+                          <span class="font-medium text-white"
                             >Manav Kapoor</span
                           >
-                          <span class="text-on-surface-variant text-[12px]"
+                          <span class="text-slate-300 text-[12px]"
                             >manav.k@college.edu</span
                           >
                         </div>
@@ -1360,26 +1352,26 @@
                     </td>
                     <td class="py-3.5 px-4">
                       <span
-                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-surface-container text-on-surface"
+                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white"
                         >D3</span
                       >
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white"
                     >
                       C.S.E
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface tracking-wider"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white tracking-wider"
                     >
                       21BECE30064
                     </td>
                     <td
-                      class="py-3.5 px-4 text-on-surface-variant whitespace-nowrap"
+                      class="py-3.5 px-4 text-slate-300 whitespace-nowrap"
                     >
                       Yesterday, 03:22 PM
                     </td>
-                    <td class="py-3.5 px-4 font-medium text-on-surface text-xs">
+                    <td class="py-3.5 px-4 font-medium text-white text-xs">
                       Rahul Sharma
                     </td>
                     <td class="py-3.5 px-4">
@@ -1395,7 +1387,7 @@
                     <td class="py-3.5 px-4 text-right pr-6">
                       <div class="flex items-center justify-end gap-2">
                         <button
-                          class="px-2.5 py-1 text-xs font-medium border border-surface-container-highest rounded hover:bg-surface-container text-on-surface transition-colors"
+                          class="px-2.5 py-1 text-xs font-medium border border-white/10 rounded hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white transition-colors"
                         >
                           View Details
                         </button>
@@ -1415,12 +1407,12 @@
             </div>
             <!-- Table Footer -->
             <div
-              class="p-4 bg-surface-container-lowest border-t border-surface-container-highest flex items-center justify-between text-body-sm font-label-sm text-on-surface-variant"
+              class="p-4 bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl border-t border-white/10 flex items-center justify-between text-body-sm font-label-sm text-slate-300"
             >
               <span class="">Showing 1-4 of 24 approved students</span>
               <div class="flex items-center gap-1">
                 <button
-                  class="w-8 h-8 rounded border border-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors disabled:opacity-40"
+                  class="w-8 h-8 rounded border border-white/10 flex items-center justify-center text-slate-300 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors disabled:opacity-40"
                   disabled=""
                 >
                   <span class="material-symbols-outlined text-[16px]"
@@ -1428,11 +1420,11 @@
                   >
                 </button>
                 <span
-                  class="px-3 font-code-inline text-code-inline text-on-surface"
+                  class="px-3 font-code-inline text-code-inline text-white"
                   >Page 1 of 6</span
                 >
                 <button
-                  class="w-8 h-8 rounded border border-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"
+                  class="w-8 h-8 rounded border border-white/10 flex items-center justify-center text-slate-300 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                 >
                   <span class="material-symbols-outlined text-[16px]"
                     >chevron_right</span
@@ -1452,7 +1444,7 @@
             >
               <div class="flex flex-col gap-y-1">
                 <span
-                  class="font-code-inline text-code-inline text-on-surface-variant uppercase tracking-widest flex items-center gap-2"
+                  class="font-code-inline text-code-inline text-slate-300 uppercase tracking-widest flex items-center gap-2"
                 >
                   <span class="">REGISTRATION RECORDS</span>
                   <span class="text-outline-variant font-bold">•</span>
@@ -1460,7 +1452,7 @@
                 </span>
                 <div class="flex items-center gap-3 mt-1">
                   <h1
-                    class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-medium"
+                    class="font-headline-lg text-headline-lg text-white tracking-tight font-medium"
                   >
                     Rejected Registrations
                   </h1>
@@ -1474,11 +1466,11 @@
               </div>
               <div class="flex items-center gap-3">
                 <button
-                  class="h-9 px-4 rounded bg-surface-container-lowest text-on-surface border border-surface-container-highest hover:bg-surface-container transition-colors flex items-center gap-2 font-label-md text-label-md font-medium shadow-sm"
+                  class="h-9 px-4 rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white border border-white/10 hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors flex items-center gap-2 font-label-md text-label-md font-medium shadow-sm"
                   type="button"
                 >
                   <span
-                    class="material-symbols-outlined text-[18px] text-secondary"
+                    class="material-symbols-outlined text-[18px] text-slate-400"
                     >delete_sweep</span
                   >
                   Clear Inactive Log
@@ -1487,26 +1479,24 @@
             </div>
             <!-- Toolbar -->
             <div
-              class="bg-surface-container-lowest rounded-lg border border-surface-container-highest p-3 flex flex-col sm:flex-row gap-3 items-center justify-between shadow-sm"
+              class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-lg border border-white/10 p-3 flex flex-col sm:flex-row gap-3 items-center justify-between shadow-sm"
             >
               <div class="relative w-full sm:max-w-md">
                 <span
-                  class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-on-surface-variant"
+                  class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-slate-300"
                   >search</span
                 >
                 <input
-                  class="w-full h-9 pl-9 pr-3 text-on-surface bg-surface border border-surface-container-highest rounded text-body-sm placeholder:text-on-secondary-container focus:outline-none focus:border-on-surface"
+                  class="w-full h-9 pl-9 pr-3 text-white bg-transparent border border-white/10 rounded text-body-sm placeholder:text-slate-400 focus:outline-none focus:border-white/50"
                   placeholder="Search rejected records..."
                   type="text"
                 />
               </div>
               <div class="flex items-center gap-2">
-                <span class="text-xs text-on-surface-variant font-label-sm"
+                <span class="text-xs text-slate-300 font-label-sm"
                   >Filter Reason:</span
                 >
-                <select
-                  class="h-9 px-3 bg-surface border border-surface-container-highest rounded text-body-sm text-on-surface focus:outline-none"
-                >
+                <select class="h-9 px-3 bg-slate-900/60 border border-white/10 backdrop-blur-xl rounded text-white focus:outline-none focus:border-white/50 transition-colors [&>option]:bg-slate-900 [&>option]:text-white" id="branch-filter">
                   <option>All Disqualification Reasons</option>
                   <option>Invalid Enrollment Credentials</option>
                   <option>Duplicate Submission</option>
@@ -1517,13 +1507,13 @@
           </div>
           <!-- Rejected Students Table Card -->
           <div
-            class="w-full bg-surface-container-lowest rounded-lg border border-surface-container-highest shadow-sm overflow-hidden flex flex-col"
+            class="w-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-lg border border-white/10 shadow-sm overflow-hidden flex flex-col"
           >
             <div class="overflow-x-auto">
               <table class="w-full text-left border-collapse">
                 <thead>
                   <tr
-                    class="bg-surface-container-low border-b border-surface-container-highest text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider"
+                    class="bg-slate-800/40 border border-white/5 border-b border-white/10 text-slate-300 font-label-sm text-label-sm uppercase tracking-wider"
                   >
                     <th class="py-3 px-4 font-medium">Student Name</th>
                     <th class="py-3 px-4 font-medium">Division</th>
@@ -1539,22 +1529,22 @@
                   </tr>
                 </thead>
                 <tbody
-                  class="divide-y divide-surface-container text-body-sm font-body-sm text-on-surface"
+                  class="divide-y divide-surface-container text-body-sm font-body-sm text-white"
                   id="rejected-table-body"
                 >
-                  <tr class="hover:bg-surface-container-low transition-colors">
+                  <tr class="hover:bg-slate-800/40 border border-white/5 transition-colors">
                     <td class="py-3.5 px-4">
                       <div class="flex items-center gap-3">
                         <div
-                          class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-code-inline text-code-inline font-medium text-on-surface"
+                          class="w-8 h-8 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl flex items-center justify-center font-code-inline text-code-inline font-medium text-white"
                         >
                           VK
                         </div>
                         <div class="flex flex-col min-w-0">
-                          <span class="font-medium text-on-surface"
+                          <span class="font-medium text-white"
                             >Varun Kapoor</span
                           >
-                          <span class="text-on-surface-variant text-[12px]"
+                          <span class="text-slate-300 text-[12px]"
                             >varun.k@college.edu</span
                           >
                         </div>
@@ -1562,22 +1552,22 @@
                     </td>
                     <td class="py-3.5 px-4">
                       <span
-                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-surface-container text-on-surface"
+                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white"
                         >D1</span
                       >
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white"
                     >
                       MECHANICAL
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface tracking-wider"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white tracking-wider"
                     >
                       21BEME10022
                     </td>
                     <td
-                      class="py-3.5 px-4 text-on-surface-variant whitespace-nowrap"
+                      class="py-3.5 px-4 text-slate-300 whitespace-nowrap"
                     >
                       Yesterday, 05:40 PM
                     </td>
@@ -1594,13 +1584,13 @@
                     <td class="py-3.5 px-4 text-right pr-6">
                       <div class="flex items-center justify-end gap-2">
                         <button
-                          class="px-2.5 py-1 text-xs font-medium border border-surface-container-highest rounded hover:bg-surface-container text-on-surface transition-colors"
+                          class="px-2.5 py-1 text-xs font-medium border border-white/10 rounded hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white transition-colors"
                           onclick="alert('Re-evaluating Varun Kapoor')"
                         >
                           Re-evaluate
                         </button>
                         <button
-                          class="px-2 py-1 text-xs text-on-surface-variant hover:text-rose-700"
+                          class="px-2 py-1 text-xs text-slate-300 hover:text-rose-700"
                           title="Delete record"
                         >
                           <span class="material-symbols-outlined text-[16px]"
@@ -1610,19 +1600,19 @@
                       </div>
                     </td>
                   </tr>
-                  <tr class="hover:bg-surface-container-low transition-colors">
+                  <tr class="hover:bg-slate-800/40 border border-white/5 transition-colors">
                     <td class="py-3.5 px-4">
                       <div class="flex items-center gap-3">
                         <div
-                          class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-code-inline text-code-inline font-medium text-on-surface"
+                          class="w-8 h-8 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl flex items-center justify-center font-code-inline text-code-inline font-medium text-white"
                         >
                           ST
                         </div>
                         <div class="flex flex-col min-w-0">
-                          <span class="font-medium text-on-surface"
+                          <span class="font-medium text-white"
                             >Sahil Tiwari</span
                           >
-                          <span class="text-on-surface-variant text-[12px]"
+                          <span class="text-slate-300 text-[12px]"
                             >sahil.t@college.edu</span
                           >
                         </div>
@@ -1630,22 +1620,22 @@
                     </td>
                     <td class="py-3.5 px-4">
                       <span
-                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-surface-container text-on-surface"
+                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white"
                         >D2</span
                       >
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white"
                     >
                       C.S.E
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface tracking-wider"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white tracking-wider"
                     >
                       21BECE39901
                     </td>
                     <td
-                      class="py-3.5 px-4 text-on-surface-variant whitespace-nowrap"
+                      class="py-3.5 px-4 text-slate-300 whitespace-nowrap"
                     >
                       Oct 23, 11:20 AM
                     </td>
@@ -1662,13 +1652,13 @@
                     <td class="py-3.5 px-4 text-right pr-6">
                       <div class="flex items-center justify-end gap-2">
                         <button
-                          class="px-2.5 py-1 text-xs font-medium border border-surface-container-highest rounded hover:bg-surface-container text-on-surface transition-colors"
+                          class="px-2.5 py-1 text-xs font-medium border border-white/10 rounded hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white transition-colors"
                           onclick="alert('Re-evaluating Sahil Tiwari')"
                         >
                           Re-evaluate
                         </button>
                         <button
-                          class="px-2 py-1 text-xs text-on-surface-variant hover:text-rose-700"
+                          class="px-2 py-1 text-xs text-slate-300 hover:text-rose-700"
                           title="Delete record"
                         >
                           <span class="material-symbols-outlined text-[16px]"
@@ -1678,19 +1668,19 @@
                       </div>
                     </td>
                   </tr>
-                  <tr class="hover:bg-surface-container-low transition-colors">
+                  <tr class="hover:bg-slate-800/40 border border-white/5 transition-colors">
                     <td class="py-3.5 px-4">
                       <div class="flex items-center gap-3">
                         <div
-                          class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center font-code-inline text-code-inline font-medium text-on-surface"
+                          class="w-8 h-8 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl flex items-center justify-center font-code-inline text-code-inline font-medium text-white"
                         >
                           AD
                         </div>
                         <div class="flex flex-col min-w-0">
-                          <span class="font-medium text-on-surface"
+                          <span class="font-medium text-white"
                             >Aditi Deshmukh</span
                           >
-                          <span class="text-on-surface-variant text-[12px]"
+                          <span class="text-slate-300 text-[12px]"
                             >aditi.d@college.edu</span
                           >
                         </div>
@@ -1698,22 +1688,22 @@
                     </td>
                     <td class="py-3.5 px-4">
                       <span
-                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-surface-container text-on-surface"
+                        class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white"
                         >D4</span
                       >
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white"
                     >
                       AI/ML
                     </td>
                     <td
-                      class="py-3.5 px-4 font-code-inline text-code-inline text-on-surface tracking-wider"
+                      class="py-3.5 px-4 font-code-inline text-code-inline text-white tracking-wider"
                     >
                       00INVALID001
                     </td>
                     <td
-                      class="py-3.5 px-4 text-on-surface-variant whitespace-nowrap"
+                      class="py-3.5 px-4 text-slate-300 whitespace-nowrap"
                     >
                       Oct 22, 02:15 PM
                     </td>
@@ -1730,13 +1720,13 @@
                     <td class="py-3.5 px-4 text-right pr-6">
                       <div class="flex items-center justify-end gap-2">
                         <button
-                          class="px-2.5 py-1 text-xs font-medium border border-surface-container-highest rounded hover:bg-surface-container text-on-surface transition-colors"
+                          class="px-2.5 py-1 text-xs font-medium border border-white/10 rounded hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white transition-colors"
                           onclick="alert('Re-evaluating Aditi Deshmukh')"
                         >
                           Re-evaluate
                         </button>
                         <button
-                          class="px-2 py-1 text-xs text-on-surface-variant hover:text-rose-700"
+                          class="px-2 py-1 text-xs text-slate-300 hover:text-rose-700"
                           title="Delete record"
                         >
                           <span class="material-symbols-outlined text-[16px]"
@@ -1751,7 +1741,7 @@
             </div>
             <!-- Table Footer -->
             <div
-              class="p-4 bg-surface-container-lowest border-t border-surface-container-highest flex items-center justify-between text-body-sm font-label-sm text-on-surface-variant"
+              class="p-4 bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl border-t border-white/10 flex items-center justify-between text-body-sm font-label-sm text-slate-300"
             >
               <span class="">Showing 3 of 3 rejected records</span>
               <span class="text-xs font-code-inline"
@@ -1770,7 +1760,7 @@
             >
               <div class="flex flex-col gap-y-1">
                 <span
-                  class="font-code-inline text-code-inline text-on-surface-variant uppercase tracking-widest flex items-center gap-2"
+                  class="font-code-inline text-code-inline text-slate-300 uppercase tracking-widest flex items-center gap-2"
                 >
                   <span class="">SUPERVISION &amp; AUDIT FEED</span>
                   <span class="text-outline-variant font-bold">•</span>
@@ -1778,12 +1768,12 @@
                 </span>
                 <div class="flex items-center gap-3 mt-1">
                   <h1
-                    class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-medium"
+                    class="font-headline-lg text-headline-lg text-white tracking-tight font-medium"
                   >
                     Activity &amp; Interaction Log
                   </h1>
                   <span
-                    class="font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-2.5 py-0.5 rounded-full border border-surface-container-highest"
+                    class="font-label-sm text-label-sm bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 px-2.5 py-0.5 rounded-full border border-white/10"
                   >
                     Continuous sync active
                   </span>
@@ -1791,7 +1781,7 @@
               </div>
               <div class="flex items-center gap-3">
                 <button
-                  class="h-9 px-4 rounded bg-surface-container-lowest text-on-surface border border-surface-container-highest hover:bg-surface-container transition-colors flex items-center gap-2 font-label-md text-label-md font-medium shadow-sm"
+                  class="h-9 px-4 rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white border border-white/10 hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors flex items-center gap-2 font-label-md text-label-md font-medium shadow-sm"
                   onclick="
                     showToast(
                       'Exporting Interaction Audit Log (.csv)',
@@ -1802,7 +1792,7 @@
                   type="button"
                 >
                   <span
-                    class="material-symbols-outlined text-[18px] text-secondary"
+                    class="material-symbols-outlined text-[18px] text-slate-400"
                     >file_download</span
                   >
                   Export Audit Trail
@@ -1811,44 +1801,44 @@
             </div>
             <!-- Filter chips for Activity Types -->
             <div
-              class="bg-surface-container-lowest rounded-lg border border-surface-container-highest p-3 flex flex-wrap gap-2 items-center justify-between shadow-sm"
+              class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-lg border border-white/10 p-3 flex flex-wrap gap-2 items-center justify-between shadow-sm"
             >
               <div
                 class="flex flex-wrap items-center gap-2"
                 id="activity-filter-chips"
               >
                 <button
-                  class="activity-chip px-3 py-1.5 rounded-full text-xs font-medium bg-primary text-on-primary transition-colors"
+                  class="activity-chip px-3 py-1.5 rounded-full text-xs font-medium bg-white/10 text-white border border-white/20 hover:bg-white/20 transition-colors"
                   data-category="all"
                 >
                   All Interactions
                 </button>
                 <button
-                  class="activity-chip px-3 py-1.5 rounded-full text-xs font-medium bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"
+                  class="activity-chip px-3 py-1.5 rounded-full text-xs font-medium bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-high transition-colors"
                   data-category="assignment"
                 >
                   Problem Assignments
                 </button>
                 <button
-                  class="activity-chip px-3 py-1.5 rounded-full text-xs font-medium bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"
+                  class="activity-chip px-3 py-1.5 rounded-full text-xs font-medium bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-high transition-colors"
                   data-category="review"
                 >
                   Code Reviews &amp; Feedback
                 </button>
                 <button
-                  class="activity-chip px-3 py-1.5 rounded-full text-xs font-medium bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"
+                  class="activity-chip px-3 py-1.5 rounded-full text-xs font-medium bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-high transition-colors"
                   data-category="meeting"
                 >
                   Meeting Notes
                 </button>
                 <button
-                  class="activity-chip px-3 py-1.5 rounded-full text-xs font-medium bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"
+                  class="activity-chip px-3 py-1.5 rounded-full text-xs font-medium bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-high transition-colors"
                   data-category="decision"
                 >
                   Approval Decisions
                 </button>
               </div>
-              <div class="text-xs font-code-inline text-on-surface-variant">
+              <div class="text-xs font-code-inline text-slate-300">
                 Showing latest supervisor entries
               </div>
             </div>
@@ -1857,7 +1847,7 @@
           <div class="flex flex-col gap-3" id="activity-items-list">
             <!-- Log Item 1: Problem Assignment -->
             <div
-              class="activity-item bg-surface-container-lowest rounded-lg border border-surface-container-highest p-4 sm:p-5 shadow-sm hover:border-outline-variant transition-colors flex flex-col gap-3"
+              class="activity-item bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-lg border border-white/10 p-4 sm:p-5 shadow-sm hover:border-outline-variant transition-colors flex flex-col gap-3"
               data-category="assignment"
             >
               <div
@@ -1865,28 +1855,28 @@
               >
                 <div class="flex items-center gap-3">
                   <div
-                    class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center"
+                    class="w-8 h-8 rounded bg-white/10 text-white border border-white/20 hover:bg-white/20 flex items-center justify-center"
                   >
                     <span class="material-symbols-outlined text-[18px]"
                       >assignment_turned_in</span
                     >
                   </div>
                   <div class="flex flex-wrap items-center gap-2">
-                    <span class="font-medium text-on-surface"
+                    <span class="font-medium text-white"
                       >Rahul Sharma</span
                     >
                     <span
-                      class="text-[11px] font-code-inline uppercase px-2 py-0.5 rounded bg-surface-container text-on-surface-variant border border-surface-container-highest"
+                      class="text-[11px] font-code-inline uppercase px-2 py-0.5 rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 border border-white/10"
                       >Lead Supervisor</span
                     >
-                    <span class="text-xs text-on-surface-variant"
+                    <span class="text-xs text-slate-300"
                       >assigned task to</span
                     >
-                    <span class="font-medium text-on-surface"
+                    <span class="font-medium text-white"
                       >Aarav Sharma</span
                     >
                     <span
-                      class="text-[11px] font-code-inline px-2 py-0.5 rounded bg-surface-container-low text-on-surface border border-surface-container-highest"
+                      class="text-[11px] font-code-inline px-2 py-0.5 rounded bg-slate-800/40 border border-white/5 text-white border border-white/10"
                       >21BECE30041 • D1</span
                     >
                   </div>
@@ -1897,7 +1887,7 @@
                     >Assignment Assigned</span
                   >
                   <span
-                    class="text-xs font-code-inline text-on-surface-variant whitespace-nowrap"
+                    class="text-xs font-code-inline text-slate-300 whitespace-nowrap"
                     >Today, 11:30 AM</span
                   >
                 </div>
@@ -1905,17 +1895,17 @@
               <div class="flex flex-col gap-1.5 pl-0 sm:pl-11">
                 <div class="flex items-center gap-2">
                   <span
-                    class="font-code-inline text-xs font-semibold px-2 py-0.5 rounded bg-surface-container text-on-surface"
+                    class="font-code-inline text-xs font-semibold px-2 py-0.5 rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white"
                     >PS-04</span
                   >
-                  <span class="text-body-sm font-medium text-on-surface"
+                  <span class="text-body-sm font-medium text-white"
                     >Reverse a Singly Linked List</span
                   >
                 </div>
                 <p
-                  class="text-body-sm text-on-surface-variant bg-surface rounded p-3 border border-surface-container-highest"
+                  class="text-body-sm text-slate-300 bg-transparent rounded p-3 border border-white/10"
                 >
-                  <strong class="font-medium text-on-surface"
+                  <strong class="font-medium text-white"
                     >Supervisor Note:</strong
                   >
                   "Focus on in-place pointer manipulation. Avoid allocating
@@ -1925,7 +1915,7 @@
             </div>
             <!-- Log Item 2: Code Review & Feedback -->
             <div
-              class="activity-item bg-surface-container-lowest rounded-lg border border-surface-container-highest p-4 sm:p-5 shadow-sm hover:border-outline-variant transition-colors flex flex-col gap-3"
+              class="activity-item bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-lg border border-white/10 p-4 sm:p-5 shadow-sm hover:border-outline-variant transition-colors flex flex-col gap-3"
               data-category="review"
             >
               <div
@@ -1933,26 +1923,26 @@
               >
                 <div class="flex items-center gap-3">
                   <div
-                    class="w-8 h-8 rounded bg-surface-container text-on-surface flex items-center justify-center"
+                    class="w-8 h-8 rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white flex items-center justify-center"
                   >
                     <span class="material-symbols-outlined text-[18px]"
                       >rate_review</span
                     >
                   </div>
                   <div class="flex flex-wrap items-center gap-2">
-                    <span class="font-medium text-on-surface"
+                    <span class="font-medium text-white"
                       >Dr. Priya Nair</span
                     >
                     <span
-                      class="text-[11px] font-code-inline uppercase px-2 py-0.5 rounded bg-surface-container text-on-surface-variant border border-surface-container-highest"
+                      class="text-[11px] font-code-inline uppercase px-2 py-0.5 rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 border border-white/10"
                       >Faculty Mentor</span
                     >
-                    <span class="text-xs text-on-surface-variant"
+                    <span class="text-xs text-slate-300"
                       >reviewed submission by</span
                     >
-                    <span class="font-medium text-on-surface">Ananya Iyer</span>
+                    <span class="font-medium text-white">Ananya Iyer</span>
                     <span
-                      class="text-[11px] font-code-inline px-2 py-0.5 rounded bg-surface-container-low text-on-surface border border-surface-container-highest"
+                      class="text-[11px] font-code-inline px-2 py-0.5 rounded bg-slate-800/40 border border-white/5 text-white border border-white/10"
                       >21BEAI10005 • D4</span
                     >
                   </div>
@@ -1963,7 +1953,7 @@
                     >Feedback Published</span
                   >
                   <span
-                    class="text-xs font-code-inline text-on-surface-variant whitespace-nowrap"
+                    class="text-xs font-code-inline text-slate-300 whitespace-nowrap"
                     >Today, 10:45 AM</span
                   >
                 </div>
@@ -1971,17 +1961,17 @@
               <div class="flex flex-col gap-1.5 pl-0 sm:pl-11">
                 <div class="flex items-center gap-2">
                   <span
-                    class="font-code-inline text-xs font-semibold px-2 py-0.5 rounded bg-surface-container text-on-surface"
+                    class="font-code-inline text-xs font-semibold px-2 py-0.5 rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white"
                     >PS-02</span
                   >
-                  <span class="text-body-sm font-medium text-on-surface"
+                  <span class="text-body-sm font-medium text-white"
                     >Valid Parentheses Stack Evaluator</span
                   >
                 </div>
                 <p
-                  class="text-body-sm text-on-surface-variant bg-surface rounded p-3 border border-surface-container-highest"
+                  class="text-body-sm text-slate-300 bg-transparent rounded p-3 border border-white/10"
                 >
-                  <strong class="font-medium text-on-surface">Feedback:</strong>
+                  <strong class="font-medium text-white">Feedback:</strong>
                   "Test cases passed (10/10), consider optimizing space
                   complexity by terminating early on odd string lengths."
                 </p>
@@ -1989,7 +1979,7 @@
             </div>
             <!-- Log Item 3: Meeting Notes / Session -->
             <div
-              class="activity-item bg-surface-container-lowest rounded-lg border border-surface-container-highest p-4 sm:p-5 shadow-sm hover:border-outline-variant transition-colors flex flex-col gap-3"
+              class="activity-item bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-lg border border-white/10 p-4 sm:p-5 shadow-sm hover:border-outline-variant transition-colors flex flex-col gap-3"
               data-category="meeting"
             >
               <div
@@ -1997,37 +1987,37 @@
               >
                 <div class="flex items-center gap-3">
                   <div
-                    class="w-8 h-8 rounded bg-surface-container text-on-surface flex items-center justify-center"
+                    class="w-8 h-8 rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white flex items-center justify-center"
                   >
                     <span class="material-symbols-outlined text-[18px]"
                       >calendar_month</span
                     >
                   </div>
                   <div class="flex flex-wrap items-center gap-2">
-                    <span class="font-medium text-on-surface">Vikram Sen</span>
+                    <span class="font-medium text-white">Vikram Sen</span>
                     <span
-                      class="text-[11px] font-code-inline uppercase px-2 py-0.5 rounded bg-surface-container text-on-surface-variant border border-surface-container-highest"
+                      class="text-[11px] font-code-inline uppercase px-2 py-0.5 rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 border border-white/10"
                       >Technical Supervisor</span
                     >
-                    <span class="text-xs text-on-surface-variant"
+                    <span class="text-xs text-slate-300"
                       >scheduled workshop with</span
                     >
-                    <span class="font-medium text-on-surface"
+                    <span class="font-medium text-white"
                       >Division D3 Cohort</span
                     >
                     <span
-                      class="text-[11px] font-code-inline px-2 py-0.5 rounded bg-surface-container-low text-on-surface border border-surface-container-highest"
+                      class="text-[11px] font-code-inline px-2 py-0.5 rounded bg-slate-800/40 border border-white/5 text-white border border-white/10"
                       >Group Session</span
                     >
                   </div>
                 </div>
                 <div class="flex items-center gap-2 self-start sm:self-auto">
                   <span
-                    class="text-[11px] font-medium px-2 py-0.5 rounded-full bg-surface-container text-on-surface border border-surface-container-highest"
+                    class="text-[11px] font-medium px-2 py-0.5 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white border border-white/10"
                     >Scheduled Offline</span
                   >
                   <span
-                    class="text-xs font-code-inline text-on-surface-variant whitespace-nowrap"
+                    class="text-xs font-code-inline text-slate-300 whitespace-nowrap"
                     >Yesterday, 04:30 PM</span
                   >
                 </div>
@@ -2035,17 +2025,17 @@
               <div class="flex flex-col gap-1.5 pl-0 sm:pl-11">
                 <div class="flex items-center gap-2">
                   <span
-                    class="font-code-inline text-xs font-semibold px-2 py-0.5 rounded bg-surface-container text-on-surface"
+                    class="font-code-inline text-xs font-semibold px-2 py-0.5 rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white"
                     >SESSION</span
                   >
-                  <span class="text-body-sm font-medium text-on-surface"
+                  <span class="text-body-sm font-medium text-white"
                     >Graph Cycle Detection (DFS &amp; Disjoint Set Union)</span
                   >
                 </div>
                 <p
-                  class="text-body-sm text-on-surface-variant bg-surface rounded p-3 border border-surface-container-highest"
+                  class="text-body-sm text-slate-300 bg-transparent rounded p-3 border border-white/10"
                 >
-                  <strong class="font-medium text-on-surface"
+                  <strong class="font-medium text-white"
                     >Session Agenda:</strong
                   >
                   Offline whiteboard problem breakdown scheduled for Lab 402,
@@ -2056,7 +2046,7 @@
             </div>
             <!-- Log Item 4: Approval Decision -->
             <div
-              class="activity-item bg-surface-container-lowest rounded-lg border border-surface-container-highest p-4 sm:p-5 shadow-sm hover:border-outline-variant transition-colors flex flex-col gap-3"
+              class="activity-item bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-lg border border-white/10 p-4 sm:p-5 shadow-sm hover:border-outline-variant transition-colors flex flex-col gap-3"
               data-category="decision"
             >
               <div
@@ -2071,21 +2061,21 @@
                     >
                   </div>
                   <div class="flex flex-wrap items-center gap-2">
-                    <span class="font-medium text-on-surface"
+                    <span class="font-medium text-white"
                       >Prof. S. Kulkarni</span
                     >
                     <span
-                      class="text-[11px] font-code-inline uppercase px-2 py-0.5 rounded bg-surface-container text-on-surface-variant border border-surface-container-highest"
+                      class="text-[11px] font-code-inline uppercase px-2 py-0.5 rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 border border-white/10"
                       >Faculty Administrator</span
                     >
-                    <span class="text-xs text-on-surface-variant"
+                    <span class="text-xs text-slate-300"
                       >approved registration for</span
                     >
-                    <span class="font-medium text-on-surface"
+                    <span class="font-medium text-white"
                       >Devansh Verma</span
                     >
                     <span
-                      class="text-[11px] font-code-inline px-2 py-0.5 rounded bg-surface-container-low text-on-surface border border-surface-container-highest"
+                      class="text-[11px] font-code-inline px-2 py-0.5 rounded bg-slate-800/40 border border-white/5 text-white border border-white/10"
                       >21BETA20034 • D5</span
                     >
                   </div>
@@ -2096,16 +2086,16 @@
                     >Registration Approved</span
                   >
                   <span
-                    class="text-xs font-code-inline text-on-surface-variant whitespace-nowrap"
+                    class="text-xs font-code-inline text-slate-300 whitespace-nowrap"
                     >Yesterday, 11:20 AM</span
                   >
                 </div>
               </div>
               <div class="flex flex-col gap-1.5 pl-0 sm:pl-11">
                 <p
-                  class="text-body-sm text-on-surface-variant bg-surface rounded p-3 border border-surface-container-highest"
+                  class="text-body-sm text-slate-300 bg-transparent rounded p-3 border border-white/10"
                 >
-                  <strong class="font-medium text-on-surface"
+                  <strong class="font-medium text-white"
                     >Audit Record:</strong
                   >
                   All prerequisite submissions verified. Student assigned to
@@ -2115,7 +2105,7 @@
             </div>
             <!-- Log Item 5: Review / Flagged Interaction -->
             <div
-              class="activity-item bg-surface-container-lowest rounded-lg border border-surface-container-highest p-4 sm:p-5 shadow-sm hover:border-outline-variant transition-colors flex flex-col gap-3"
+              class="activity-item bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-lg border border-white/10 p-4 sm:p-5 shadow-sm hover:border-outline-variant transition-colors flex flex-col gap-3"
               data-category="review"
             >
               <div
@@ -2130,17 +2120,17 @@
                     >
                   </div>
                   <div class="flex flex-wrap items-center gap-2">
-                    <span class="font-medium text-on-surface">Neha Roy</span>
+                    <span class="font-medium text-white">Neha Roy</span>
                     <span
-                      class="text-[11px] font-code-inline uppercase px-2 py-0.5 rounded bg-surface-container text-on-surface-variant border border-surface-container-highest"
+                      class="text-[11px] font-code-inline uppercase px-2 py-0.5 rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-300 border border-white/10"
                       >Co-Supervisor</span
                     >
-                    <span class="text-xs text-on-surface-variant"
+                    <span class="text-xs text-slate-300"
                       >flagged submission by</span
                     >
-                    <span class="font-medium text-on-surface">Rohan Mehta</span>
+                    <span class="font-medium text-white">Rohan Mehta</span>
                     <span
-                      class="text-[11px] font-code-inline px-2 py-0.5 rounded bg-surface-container-low text-on-surface border border-surface-container-highest"
+                      class="text-[11px] font-code-inline px-2 py-0.5 rounded bg-slate-800/40 border border-white/5 text-white border border-white/10"
                       >22BECE40012 • D3</span
                     >
                   </div>
@@ -2151,7 +2141,7 @@
                     >Re-submission Requested</span
                   >
                   <span
-                    class="text-xs font-code-inline text-on-surface-variant whitespace-nowrap"
+                    class="text-xs font-code-inline text-slate-300 whitespace-nowrap"
                     >Oct 24, 04:20 PM</span
                   >
                 </div>
@@ -2159,17 +2149,17 @@
               <div class="flex flex-col gap-1.5 pl-0 sm:pl-11">
                 <div class="flex items-center gap-2">
                   <span
-                    class="font-code-inline text-xs font-semibold px-2 py-0.5 rounded bg-surface-container text-on-surface"
+                    class="font-code-inline text-xs font-semibold px-2 py-0.5 rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white"
                     >PS-01</span
                   >
-                  <span class="text-body-sm font-medium text-on-surface"
+                  <span class="text-body-sm font-medium text-white"
                     >Two Sum Hashmap Solution</span
                   >
                 </div>
                 <p
-                  class="text-body-sm text-on-surface-variant bg-surface rounded p-3 border border-surface-container-highest"
+                  class="text-body-sm text-slate-300 bg-transparent rounded p-3 border border-white/10"
                 >
-                  <strong class="font-medium text-on-surface">Reason:</strong>
+                  <strong class="font-medium text-white">Reason:</strong>
                   Code structure matched template solution from external forum
                   (88% similarity index). Student requested to submit a revised
                   walk-through with personal variable tracing and complexity
@@ -2192,18 +2182,18 @@
             // Update Nav Tab Styles
             navTabs.forEach((t) => {
               t.classList.remove(
-                "text-on-surface",
+                "text-white",
                 "border-primary",
                 "font-semibold",
               );
-              t.classList.add("text-on-surface-variant", "border-transparent");
+              t.classList.add("text-slate-300", "border-transparent");
             });
             tab.classList.remove(
-              "text-on-surface-variant",
+              "text-slate-300",
               "border-transparent",
             );
             tab.classList.add(
-              "text-on-surface",
+              "text-white",
               "border-primary",
               "font-semibold",
             );
@@ -2228,16 +2218,16 @@
         activityChips.forEach((chip) => {
           chip.addEventListener("click", () => {
             activityChips.forEach((c) => {
-              c.classList.remove("bg-primary", "text-on-primary");
+              c.classList.remove("bg-white/10 border border-white/20 backdrop-blur-sm", "text-white");
               c.classList.add(
-                "bg-surface-container",
-                "text-on-surface-variant",
+                "bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl",
+                "text-slate-300",
               );
             });
-            chip.classList.add("bg-primary", "text-on-primary");
+            chip.classList.add("bg-white/10 border border-white/20 backdrop-blur-sm", "text-white");
             chip.classList.remove(
-              "bg-surface-container",
-              "text-on-surface-variant",
+              "bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl",
+              "text-slate-300",
             );
 
             const category = chip.dataset.category;
@@ -2277,30 +2267,28 @@
           updateSelection();
         }
 
-        function showToast(message, allowUndo = false, icon = "info") {
+        function showToast(message, icon = "info") {
           const toast = document.getElementById("toast-banner");
           const toastMsg = document.getElementById("toast-message");
           const toastIcon = document.getElementById("toast-icon");
           const undoBtn = document.getElementById("toast-undo");
 
+          // Hide the undo button permanently since we are removing it
+          if (undoBtn) {
+            undoBtn.classList.add("hidden");
+          }
+
           toastMsg.innerText = message;
           toastIcon.innerText = icon;
           toast.classList.remove("hidden");
 
-          if (allowUndo) {
-            undoBtn.classList.remove("hidden");
-          } else {
-            undoBtn.classList.add("hidden");
-          }
-
-          if (!allowUndo) {
-            setTimeout(() => {
-              toast.classList.add("hidden");
-            }, 4000);
-          }
+          // Always auto-dismiss the notification after 3.5 seconds
+          setTimeout(() => {
+            toast.classList.add("hidden");
+          }, 3500);
         }
 
-        window.approveApplication = function (id, studentName) {
+       window.approveApplication = function (id, studentName) {
           const row = document.getElementById(`row-${id}`);
           if (!row) return;
 
@@ -2309,15 +2297,15 @@
 
           const actionCell = row.querySelector(".action-cell");
           actionCell.innerHTML = `
-      <div class="flex items-center justify-end gap-2">
-        <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded text-xs font-medium bg-emerald-50 text-emerald-800 border border-emerald-200">
-          <span class="material-symbols-outlined text-[14px]">verified</span> Approved
-        </span>
-        <button onclick="undoApplication(${id})" class="text-xs text-on-surface-variant hover:text-on-surface underline font-medium px-1">Undo</button>
-      </div>
-    `;
+            <div class="flex items-center justify-end gap-2">
+              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                <span class="material-symbols-outlined text-[14px]">verified</span> Approved
+              </span>
+              <button onclick="undoApplication(${id})" class="text-xs text-slate-300 hover:text-white underline font-medium px-1 cursor-pointer">Undo</button>
+            </div>
+          `;
 
-          row.classList.add("bg-surface-container-low/50");
+          row.classList.add("bg-slate-800/40", "border", "border-white/5");
           verifiedCount += 1;
           document.getElementById("metric-verified").innerText =
             `${verifiedCount} Students`;
@@ -2325,15 +2313,11 @@
             verifiedCount;
 
           lastAction = { id, type: "approve", previousHTML, name: studentName };
-          showToast(
-            `Application for ${studentName} approved.`,
-            true,
-            "check_circle",
-          );
+          showToast(`Application for ${studentName} approved.`, "check_circle");
           updateMetricsAndCounters();
         };
 
-        window.rejectApplication = function (id, studentName) {
+       window.rejectApplication = function (id, studentName) {
           const confirmed = confirm(
             `Are you sure you want to reject the application for ${studentName}?`,
           );
@@ -2348,10 +2332,10 @@
           const actionCell = row.querySelector(".action-cell");
           actionCell.innerHTML = `
       <div class="flex items-center justify-end gap-2">
-        <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded text-xs font-medium bg-rose-50 text-rose-800 border border-rose-200">
+        <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded text-xs font-medium bg-rose-500/20 text-rose-300 border border-rose-500/30">
           <span class="material-symbols-outlined text-[14px]">cancel</span> Rejected
         </span>
-        <button onclick="undoApplication(${id})" class="text-xs text-on-surface-variant hover:text-on-surface underline font-medium px-1">Undo</button>
+        <button onclick="undoApplication(${id})" class="text-xs text-slate-300 hover:text-white underline font-medium px-1 cursor-pointer">Undo</button>
       </div>
     `;
 
@@ -2361,21 +2345,29 @@
             rejectedCount;
 
           lastAction = { id, type: "reject", previousHTML, name: studentName };
-          showToast(`Application for ${studentName} rejected.`, true, "block");
+          showToast(`Application for ${studentName} rejected.`, "block");
           updateMetricsAndCounters();
         };
 
-        window.undoApplication = function (id) {
+       window.undoApplication = function (id) {
           const row = document.getElementById(`row-${id}`);
           if (!row || !lastAction || lastAction.id !== id) return;
 
+          // Completely restore original HTML and clear processed state flag
           row.innerHTML = lastAction.previousHTML;
           delete row.dataset.processed;
+          
+          // Remove all state styling classes from row and child elements
           row.classList.remove(
-            "bg-surface-container-low/50",
+            "bg-slate-800/40",
+            "border",
+            "border-white/5",
             "opacity-60",
             "line-through",
           );
+          row.querySelectorAll("*").forEach(el => {
+            el.classList.remove("line-through", "opacity-60");
+          });
 
           if (lastAction.type === "approve") {
             verifiedCount -= 1;
@@ -2393,12 +2385,6 @@
           lastAction = null;
           updateMetricsAndCounters();
         };
-
-        document.getElementById("toast-undo").addEventListener("click", () => {
-          if (lastAction) {
-            window.undoApplication(lastAction.id);
-          }
-        });
 
         // Checkbox and Selection Logic
         const selectAllCheckbox = document.getElementById("select-all");
@@ -2423,15 +2409,15 @@
               "cursor-not-allowed",
             );
             batchApproveBtn.classList.add(
-              "bg-primary",
-              "text-on-primary",
-              "hover:bg-surface-container-highest",
-              "hover:text-on-surface",
+              "bg-white/10 border border-white/20 backdrop-blur-sm",
+              "text-white",
+              "hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-highest",
+              "hover:text-white",
             );
             batchRejectBtn.classList.remove("opacity-50", "cursor-not-allowed");
             batchRejectBtn.classList.add(
-              "bg-surface-container-highest",
-              "text-on-surface",
+              "bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-highest",
+              "text-white",
               "hover:bg-outline-variant",
             );
           } else {
@@ -2439,15 +2425,15 @@
             batchRejectBtn.disabled = true;
             batchApproveBtn.classList.add("opacity-50", "cursor-not-allowed");
             batchApproveBtn.classList.remove(
-              "bg-primary",
-              "text-on-primary",
-              "hover:bg-surface-container-highest",
-              "hover:text-on-surface",
+              "bg-white/10 border border-white/20 backdrop-blur-sm",
+              "text-white",
+              "hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-highest",
+              "hover:text-white",
             );
             batchRejectBtn.classList.add("opacity-50", "cursor-not-allowed");
             batchRejectBtn.classList.remove(
-              "bg-surface-container-highest",
-              "text-on-surface",
+              "bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-highest",
+              "text-white",
               "hover:bg-outline-variant",
             );
           }
@@ -2582,22 +2568,22 @@
           tab.addEventListener("click", () => {
             filterTabs.forEach((t) => {
               t.classList.remove(
-                "bg-surface-container-lowest",
-                "text-on-surface",
+                "bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl",
+                "text-white",
                 "border",
-                "border-surface-container-highest",
+                "border-white/10",
                 "shadow-sm",
               );
-              t.classList.add("text-on-surface-variant");
+              t.classList.add("text-slate-300");
             });
             tab.classList.add(
-              "bg-surface-container-lowest",
-              "text-on-surface",
+              "bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl",
+              "text-white",
               "border",
-              "border-surface-container-highest",
+              "border-white/10",
               "shadow-sm",
             );
-            tab.classList.remove("text-on-surface-variant");
+            tab.classList.remove("text-slate-300");
             activeTab = tab.dataset.filter;
             applyFilters();
           });
@@ -2620,10 +2606,10 @@
       </script>
     </main>
     <footer
-      class="w-full bg-surface-container-lowest mt-space-2xl shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"
+      class="fixed bottom-0 left-0 z-50 w-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"
     >
       <div
-        class="max-w-7xl mx-auto px-6 lg:px-12 py-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant"
+        class="max-w-7xl mx-auto px-6 lg:px-12 py-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-slate-300"
       >
         <div class="">Coding Club Oversight Board • Internal Portal</div>
         <div class="flex items-center gap-space-lg"></div>

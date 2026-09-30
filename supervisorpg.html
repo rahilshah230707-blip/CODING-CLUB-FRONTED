@@ -97,7 +97,7 @@
     </script>
 </head>
   <body
-    class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col justify-between"
+    class="bg-surface font-body-md text-white antialiased min-h-screen flex flex-col justify-between"
   >
   <!-- 1. Place it here: inside <body>, but OUTSIDE and ABOVE your header -->
   <div id="vanta-canvas" class="fixed inset-0 -z-10 h-screen w-full"></div>
@@ -113,7 +113,7 @@
     <!-- Page sections, text, cards -->
   </main>
     <header
-      class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest border-b border-surface-variant"
+      class="fixed top-0 left-0 right-0 z-50 bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl border-b border-surface-variant"
     >
       <div
         class="h-14 w-full px-gutter-lg flex items-center justify-between border-b border-surface-container-high"
@@ -121,20 +121,20 @@
         <div class="flex items-center gap-space-sm">
           <div class="flex items-center gap-space-xs">
             <span
-              class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-semibold"
+              class="font-headline-sm text-headline-sm text-white tracking-tight font-semibold"
               >Supervisor Portal</span
             >
           </div>
         </div>
         <div class="flex items-center gap-space-md">
           <div
-            class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md"
+            class="flex items-center gap-space-xs text-slate-300 font-label-md text-label-md"
           >
             <span class="w-2 h-2 rounded-full bg-primary inline-block"></span
             ><span class="">ACADEMIC TERM 2024-25</span>
           </div>
           <a
-            class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low px-space-xs py-1 rounded transition-colors"
+            class="font-label-md text-label-md text-slate-300 hover:text-white hover:bg-slate-800/40 border border-white/5 px-space-xs py-1 rounded transition-colors"
             data-path="login"
             href="#"
             >Logout</a
@@ -149,21 +149,21 @@
         </div>
       </div>
       <div
-        class="h-12 w-full px-gutter-lg flex items-center bg-surface-container-lowest"
+        class="h-12 w-full px-gutter-lg flex items-center bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl"
       >
         <nav class="flex items-center gap-space-lg h-full" id="portal-nav">
           <a
-            class="nav-tab flex items-center h-full px-space-2xs hover:text-on-surface font-headline-sm text-label-md transition-colors border-b-2 cursor-pointer text-on-surface-variant border-transparent"
+            class="nav-tab flex items-center h-full px-space-2xs hover:text-white font-headline-sm text-label-md transition-colors border-b-2 cursor-pointer text-slate-300 border-transparent"
             data-view="student-progress"
             id="nav-student-progress"
             >Student Progress</a
           ><a
-            class="nav-tab flex items-center h-full px-space-2xs transition-colors border-b-2 cursor-pointer text-on-surface-variant border-transparent"
+            class="nav-tab flex items-center h-full px-space-2xs transition-colors border-b-2 cursor-pointer text-slate-300 border-transparent"
             data-view="manage-problem-statements"
             id="nav-manage-problem-statements"
             >Manage Problem Statements</a
           ><a
-            class="nav-tab flex items-center h-full px-space-2xs hover:text-on-surface font-headline-sm text-label-md transition-colors border-b-2 cursor-pointer text-on-surface border-primary font-semibold"
+            class="nav-tab flex items-center h-full px-space-2xs hover:text-white font-headline-sm text-label-md transition-colors border-b-2 cursor-pointer text-white border-primary font-semibold"
             data-view="meeting-schedule"
             id="nav-meeting-schedule"
             aria-current="page"
@@ -172,7 +172,7 @@
         </nav>
       </div>
     </header>
-    <main class="w-full pt-[104px] px-gutter-lg py-space-xl flex-1">
+    <main class="w-full pt-[104px] px-gutter-lg pb-24 flex-1">
       <!-- ========================================== -->
       <!-- VIEW 1: MANAGE PROBLEM STATEMENTS (DEFAULT) -->
       <!-- ========================================== -->
@@ -186,22 +186,22 @@
           id="create-modal"
         >
           <div
-            class="w-full max-w-xl bg-surface-container-lowest rounded-xl p-space-xl shadow-2xl flex flex-col gap-space-lg"
+            class="w-full max-w-xl bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-xl p-space-xl shadow-2xl flex flex-col gap-space-lg"
           >
             <div class="flex items-center justify-between pb-space-xs">
               <div>
                 <span
-                  class="font-label-sm text-label-sm text-secondary uppercase tracking-wider block"
+                  class="font-label-sm text-label-sm text-slate-400 uppercase tracking-wider block"
                   >Curriculum Engine</span
                 >
                 <h2
-                  class="font-headline-sm text-headline-sm text-on-surface font-semibold"
+                  class="font-headline-sm text-headline-sm text-white font-semibold"
                 >
                   New Problem Statement
                 </h2>
               </div>
               <button
-                class="w-8 h-8 rounded-lg flex items-center justify-center text-secondary hover:text-on-surface hover:bg-surface-container-low transition-colors"
+                class="w-8 h-8 rounded-lg flex items-center justify-center text-slate-400 hover:text-white hover:bg-slate-800/40 border border-white/5 transition-colors"
                 id="close-modal-btn"
               >
                 <span class="material-symbols-outlined text-[20px]">close</span>
@@ -211,11 +211,11 @@
               <div class="flex gap-space-md">
                 <div class="flex-1 flex flex-col gap-space-2xs">
                   <label
-                    class="font-label-sm text-label-sm text-secondary font-medium"
+                    class="font-label-sm text-label-sm text-slate-400 font-medium"
                     >Identifier</label
                   >
                   <input
-                    class="h-10 px-3 bg-surface-container-low rounded font-code-inline text-code-inline text-on-surface cursor-not-allowed outline-none select-none"
+                    class="h-10 px-3 bg-slate-800/40 border border-white/5 rounded font-code-inline text-code-inline text-white cursor-not-allowed outline-none select-none"
                     readonly=""
                     type="text"
                     value="PS-08"
@@ -223,11 +223,10 @@
                 </div>
                 <div class="flex-1 flex flex-col gap-space-2xs">
                   <label
-                    class="font-label-sm text-label-sm text-secondary font-medium"
+                    class="font-label-sm text-label-sm text-slate-400 font-medium"
                     >Complexity Tier</label
                   >
-                  <select
-                    class="h-10 px-3 bg-surface-container-lowest rounded font-body-sm text-body-sm text-on-surface outline-none"
+                  <select class="[&>option]:bg-slate-900 [&>option]:text-white h-10 px-3 bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded font-body-sm text-body-sm text-white outline-none"
                   >
                     <option>Easy • 100 Pts</option>
                     <option selected="">Medium • 250 Pts</option>
@@ -237,22 +236,21 @@
               </div>
               <div class="flex flex-col gap-space-2xs">
                 <label
-                  class="font-label-sm text-label-sm text-secondary font-medium"
+                  class="font-label-sm text-label-sm text-slate-400 font-medium"
                   >Statement Title</label
                 >
                 <input
-                  class="h-10 px-3 bg-surface-container-lowest rounded font-body-sm text-body-sm text-on-surface placeholder:text-outline outline-none"
+                  class="h-10 px-3 bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded font-body-sm text-body-sm text-white placeholder:text-outline outline-none"
                   placeholder="e.g. Lowest Common Ancestor in Binary Search Tree"
                   type="text"
                 />
               </div>
               <div class="flex flex-col gap-space-2xs">
                 <label
-                  class="font-label-sm text-label-sm text-secondary font-medium"
+                  class="font-label-sm text-label-sm text-slate-400 font-medium"
                   >Initial Distribution Cohort</label
                 >
-                <select
-                  class="h-10 px-3 bg-surface-container-lowest rounded font-body-sm text-body-sm text-on-surface outline-none"
+                <select class="[&>option]:bg-slate-900 [&>option]:text-white h-10 px-3 bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded font-body-sm text-body-sm text-white outline-none"
                 >
                   <option>All Students (Global Pool)</option>
                   <option>Division D1, D2 (Advanced Systems)</option>
@@ -263,7 +261,7 @@
             </div>
             <div class="flex items-center justify-end gap-space-sm pt-space-xs">
               <button
-                class="h-9 px-space-md rounded font-label-md text-label-md text-secondary hover:text-on-surface hover:bg-surface-container-low transition-colors"
+                class="h-9 px-space-md rounded font-label-md text-label-md text-slate-400 hover:text-white hover:bg-slate-800/40 border border-white/5 transition-colors"
                 id="cancel-modal-btn"
               >
                 Cancel
@@ -283,16 +281,16 @@
         >
           <div class="flex flex-col gap-space-xs">
             <div
-              class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary uppercase tracking-widest leading-loose"
+              class="flex items-center gap-space-xs font-label-sm text-label-sm text-slate-400 uppercase tracking-widest leading-loose"
             ></div>
             <div class="flex items-baseline gap-space-md mt-1">
               <h1
-                class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight leading-normal"
+                class="font-headline-lg text-headline-lg text-white font-semibold tracking-tight leading-normal"
               >
                 Problem Statements
               </h1>
               <span
-                class="font-label-md text-label-md text-secondary ml-2"
+                class="font-label-md text-label-md text-slate-400 ml-2"
                 id="record-counter"
                 >Showing 7 active statements</span
               >
@@ -300,7 +298,7 @@
           </div>
           <div class="flex items-center gap-space-md">
             <button
-              class="h-10 px-space-lg rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-colors flex items-center gap-space-xs"
+              class="h-10 px-space-lg rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white font-label-md text-label-md shadow-sm hover:bg-slate-800/40 border border-white/5 transition-colors flex items-center gap-space-xs"
             >
               <span class="material-symbols-outlined text-[18px]"
                 >file_download</span
@@ -316,7 +314,7 @@
         </div>
         <!-- Controls Bar: Filter, Search & Segmented Status -->
         <div
-          class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md mb-space-xl"
+          class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-xl p-space-md shadow-sm flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md mb-space-xl"
         >
           <div
             class="flex flex-1 flex-col sm:flex-row items-center gap-space-sm"
@@ -326,15 +324,14 @@
                 class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-outline"
                 >search</span
               ><input
-                class="w-full h-10 pl-9 pr-3 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface placeholder:text-outline outline-none focus:bg-surface-container-lowest transition-colors"
+                class="w-full h-10 pl-9 pr-3 bg-slate-800/40 border border-white/5 rounded font-body-sm text-body-sm text-white placeholder:text-outline outline-none focus:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                 id="table-search"
                 placeholder="Search by ID or title..."
                 type="text"
               />
             </div>
             <div class="relative w-full sm:w-56">
-              <select
-                class="w-full h-10 pl-3 pr-8 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface outline-none appearance-none cursor-pointer"
+              <select class="[&>option]:bg-slate-900 [&>option]:text-white w-full h-10 pl-3 pr-8 bg-slate-800/40 border border-white/5 rounded font-body-sm text-body-sm text-white outline-none appearance-none cursor-pointer"
                 id="division-filter"
               >
                 <option value="all">All Target Cohorts</option>
@@ -351,20 +348,20 @@
             </div>
           </div>
           <div
-            class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-full self-start sm:self-auto"
+            class="flex items-center gap-space-xs bg-slate-800/40 border border-white/5 p-1 rounded-full self-start sm:self-auto"
           >
             <button
-              class="status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all bg-surface-container-lowest text-on-surface shadow-sm font-medium"
+              class="status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white shadow-sm font-medium"
               data-status="all"
             >
               All</button
             ><button
-              class="status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all text-secondary hover:text-on-surface"
+              class="status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all text-slate-400 hover:text-white"
               data-status="published"
             >
               Published</button
             ><button
-              class="status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all text-secondary hover:text-on-surface"
+              class="status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all text-slate-400 hover:text-white"
               data-status="draft"
             >
               Draft
@@ -373,12 +370,12 @@
         </div>
         <!-- Main Table Container Card -->
         <div
-          class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col"
+          class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-xl shadow-sm overflow-hidden flex flex-col"
         >
           <div class="overflow-x-auto w-full">
             <table class="w-full text-left table-fixed min-w-[760px]">
               <thead>
-                <tr class="bg-surface-container-low">
+                <tr class="bg-slate-800/40 border border-white/5">
                   <th class="w-12 py-3 pl-space-md text-left">
                     <input
                       class="rounded accent-primary w-4 h-4 cursor-pointer"
@@ -387,27 +384,27 @@
                     />
                   </th>
                   <th
-                    class="w-28 py-3 px-space-sm font-label-sm text-label-sm text-secondary uppercase tracking-wider font-medium"
+                    class="w-28 py-3 px-space-sm font-label-sm text-label-sm text-slate-400 uppercase tracking-wider font-medium"
                   >
                     Problem ID
                   </th>
                   <th
-                    class="w-2/5 py-3 px-space-sm font-label-sm text-label-sm text-secondary uppercase tracking-wider font-medium"
+                    class="w-2/5 py-3 px-space-sm font-label-sm text-label-sm text-slate-400 uppercase tracking-wider font-medium"
                   >
                     Title &amp; Classification
                   </th>
                   <th
-                    class="w-32 py-3 px-space-sm font-label-sm text-label-sm text-secondary uppercase tracking-wider font-medium"
+                    class="w-32 py-3 px-space-sm font-label-sm text-label-sm text-slate-400 uppercase tracking-wider font-medium"
                   >
                     Upload Date
                   </th>
                   <th
-                    class="w-40 py-3 px-space-sm font-label-sm text-label-sm text-secondary uppercase tracking-wider font-medium"
+                    class="w-40 py-3 px-space-sm font-label-sm text-label-sm text-slate-400 uppercase tracking-wider font-medium"
                   >
                     Assigned To
                   </th>
                   <th
-                    class="w-36 py-3 pr-space-md text-right font-label-sm text-label-sm text-secondary uppercase tracking-wider font-medium"
+                    class="w-36 py-3 pr-space-md text-right font-label-sm text-label-sm text-slate-400 uppercase tracking-wider font-medium"
                   >
                     Actions
                   </th>
@@ -419,7 +416,7 @@
               >
                 <!-- Row 1: PS-01 -->
                 <tr
-                  class="problem-row hover:bg-surface-container-low/60 transition-colors"
+                  class="problem-row hover:bg-slate-800/40 border border-white/5/60 transition-colors"
                   data-division="All Students"
                   data-id="PS-01"
                   data-status="published"
@@ -432,30 +429,30 @@
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="font-code-inline text-code-inline bg-surface-container px-2 py-0.5 rounded text-on-surface font-semibold tracking-tight"
+                      class="font-code-inline text-code-inline bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl px-2 py-0.5 rounded text-white font-semibold tracking-tight"
                       >PS-01</span
                     >
                   </td>
                   <td class="py-3 px-space-sm">
                     <div class="flex items-center gap-space-xs flex-wrap">
                       <span
-                        class="font-body-md text-body-md text-on-surface font-medium"
+                        class="font-body-md text-body-md text-white font-medium"
                         >PS-01: Two Sum with Hash Map</span
                       >
                       <span
-                        class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-mono"
+                        class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-high text-slate-300 font-mono"
                         >Easy</span
                       >
                     </div>
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-secondary"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-slate-400"
                   >
                     Sep 28, 2024
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface bg-surface-container-low px-2 py-0.5 rounded-full"
+                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-white bg-slate-800/40 border border-white/5 px-2 py-0.5 rounded-full"
                     >
                       <span
                         class="w-1.5 h-1.5 rounded-full bg-primary inline-block"
@@ -468,17 +465,17 @@
                       class="inline-flex items-center justify-end gap-space-xs"
                     >
                       <button
-                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Edit
                       </button>
                       <button
-                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Assign
                       </button>
                       <button
-                        class="action-menu w-7 h-7 flex items-center justify-center rounded text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="action-menu w-7 h-7 flex items-center justify-center rounded text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         <span class="material-symbols-outlined text-[18px]"
                           >more_vert</span
@@ -489,7 +486,7 @@
                 </tr>
                 <!-- Row 2: PS-02 -->
                 <tr
-                  class="problem-row hover:bg-surface-container-low/60 transition-colors"
+                  class="problem-row hover:bg-slate-800/40 border border-white/5/60 transition-colors"
                   data-division="Division D1, D2"
                   data-id="PS-02"
                   data-status="published"
@@ -502,30 +499,30 @@
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="font-code-inline text-code-inline bg-surface-container px-2 py-0.5 rounded text-on-surface font-semibold tracking-tight"
+                      class="font-code-inline text-code-inline bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl px-2 py-0.5 rounded text-white font-semibold tracking-tight"
                       >PS-02</span
                     >
                   </td>
                   <td class="py-3 px-space-sm">
                     <div class="flex items-center gap-space-xs flex-wrap">
                       <span
-                        class="font-body-md text-body-md text-on-surface font-medium"
+                        class="font-body-md text-body-md text-white font-medium"
                         >PS-02: Valid Parentheses Stack Evaluator</span
                       >
                       <span
-                        class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-mono"
+                        class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-high text-slate-300 font-mono"
                         >Easy</span
                       >
                     </div>
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-secondary"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-slate-400"
                   >
                     Oct 02, 2024
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface bg-surface-container-low px-2 py-0.5 rounded-full"
+                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-white bg-slate-800/40 border border-white/5 px-2 py-0.5 rounded-full"
                     >
                       <span
                         class="w-1.5 h-1.5 rounded-full bg-primary inline-block"
@@ -538,17 +535,17 @@
                       class="inline-flex items-center justify-end gap-space-xs"
                     >
                       <button
-                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Edit
                       </button>
                       <button
-                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Assign
                       </button>
                       <button
-                        class="action-menu w-7 h-7 flex items-center justify-center rounded text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="action-menu w-7 h-7 flex items-center justify-center rounded text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         <span class="material-symbols-outlined text-[18px]"
                           >more_vert</span
@@ -559,7 +556,7 @@
                 </tr>
                 <!-- Row 3: PS-03 -->
                 <tr
-                  class="problem-row hover:bg-surface-container-low/60 transition-colors"
+                  class="problem-row hover:bg-slate-800/40 border border-white/5/60 transition-colors"
                   data-division="Division D3"
                   data-id="PS-03"
                   data-status="published"
@@ -572,14 +569,14 @@
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="font-code-inline text-code-inline bg-surface-container px-2 py-0.5 rounded text-on-surface font-semibold tracking-tight"
+                      class="font-code-inline text-code-inline bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl px-2 py-0.5 rounded text-white font-semibold tracking-tight"
                       >PS-03</span
                     >
                   </td>
                   <td class="py-3 px-space-sm">
                     <div class="flex items-center gap-space-xs flex-wrap">
                       <span
-                        class="font-body-md text-body-md text-on-surface font-medium"
+                        class="font-body-md text-body-md text-white font-medium"
                         >PS-03: Merge K Sorted Linked Lists</span
                       >
                       <span
@@ -589,13 +586,13 @@
                     </div>
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-secondary"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-slate-400"
                   >
                     Oct 05, 2024
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface bg-surface-container-low px-2 py-0.5 rounded-full"
+                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-white bg-slate-800/40 border border-white/5 px-2 py-0.5 rounded-full"
                     >
                       <span
                         class="w-1.5 h-1.5 rounded-full bg-primary inline-block"
@@ -608,17 +605,17 @@
                       class="inline-flex items-center justify-end gap-space-xs"
                     >
                       <button
-                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Edit
                       </button>
                       <button
-                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Assign
                       </button>
                       <button
-                        class="action-menu w-7 h-7 flex items-center justify-center rounded text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="action-menu w-7 h-7 flex items-center justify-center rounded text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         <span class="material-symbols-outlined text-[18px]"
                           >more_vert</span
@@ -629,7 +626,7 @@
                 </tr>
                 <!-- Row 4: PS-04 -->
                 <tr
-                  class="problem-row hover:bg-surface-container-low/60 transition-colors"
+                  class="problem-row hover:bg-slate-800/40 border border-white/5/60 transition-colors"
                   data-division="Division D4"
                   data-id="PS-04"
                   data-status="published"
@@ -642,30 +639,30 @@
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="font-code-inline text-code-inline bg-surface-container px-2 py-0.5 rounded text-on-surface font-semibold tracking-tight"
+                      class="font-code-inline text-code-inline bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl px-2 py-0.5 rounded text-white font-semibold tracking-tight"
                       >PS-04</span
                     >
                   </td>
                   <td class="py-3 px-space-sm">
                     <div class="flex items-center gap-space-xs flex-wrap">
                       <span
-                        class="font-body-md text-body-md text-on-surface font-medium"
+                        class="font-body-md text-body-md text-white font-medium"
                         >PS-04: Reverse a Singly Linked List</span
                       >
                       <span
-                        class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-mono"
+                        class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-high text-slate-300 font-mono"
                         >Easy</span
                       >
                     </div>
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-secondary"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-slate-400"
                   >
                     Oct 12, 2024
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface bg-surface-container-low px-2 py-0.5 rounded-full"
+                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-white bg-slate-800/40 border border-white/5 px-2 py-0.5 rounded-full"
                     >
                       <span
                         class="w-1.5 h-1.5 rounded-full bg-primary inline-block"
@@ -678,17 +675,17 @@
                       class="inline-flex items-center justify-end gap-space-xs"
                     >
                       <button
-                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Edit
                       </button>
                       <button
-                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Assign
                       </button>
                       <button
-                        class="action-menu w-7 h-7 flex items-center justify-center rounded text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="action-menu w-7 h-7 flex items-center justify-center rounded text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         <span class="material-symbols-outlined text-[18px]"
                           >more_vert</span
@@ -699,7 +696,7 @@
                 </tr>
                 <!-- Row 5: PS-05 -->
                 <tr
-                  class="problem-row hover:bg-surface-container-low/60 transition-colors"
+                  class="problem-row hover:bg-slate-800/40 border border-white/5/60 transition-colors"
                   data-division="Division D5, D6"
                   data-id="PS-05"
                   data-status="published"
@@ -712,30 +709,30 @@
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="font-code-inline text-code-inline bg-surface-container px-2 py-0.5 rounded text-on-surface font-semibold tracking-tight"
+                      class="font-code-inline text-code-inline bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl px-2 py-0.5 rounded text-white font-semibold tracking-tight"
                       >PS-05</span
                     >
                   </td>
                   <td class="py-3 px-space-sm">
                     <div class="flex items-center gap-space-xs flex-wrap">
                       <span
-                        class="font-body-md text-body-md text-on-surface font-medium"
+                        class="font-body-md text-body-md text-white font-medium"
                         >PS-05: Dynamic Programming Knapsack</span
                       >
                       <span
-                        class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-mono"
+                        class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-highest text-white font-mono"
                         >Medium</span
                       >
                     </div>
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-secondary"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-slate-400"
                   >
                     Oct 14, 2024
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface bg-surface-container-low px-2 py-0.5 rounded-full"
+                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-white bg-slate-800/40 border border-white/5 px-2 py-0.5 rounded-full"
                     >
                       <span
                         class="w-1.5 h-1.5 rounded-full bg-primary inline-block"
@@ -748,17 +745,17 @@
                       class="inline-flex items-center justify-end gap-space-xs"
                     >
                       <button
-                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Edit
                       </button>
                       <button
-                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Assign
                       </button>
                       <button
-                        class="action-menu w-7 h-7 flex items-center justify-center rounded text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="action-menu w-7 h-7 flex items-center justify-center rounded text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         <span class="material-symbols-outlined text-[18px]"
                           >more_vert</span
@@ -769,7 +766,7 @@
                 </tr>
                 <!-- Row 6: PS-06 -->
                 <tr
-                  class="problem-row hover:bg-surface-container-low/60 transition-colors"
+                  class="problem-row hover:bg-slate-800/40 border border-white/5/60 transition-colors"
                   data-division="Division D1"
                   data-id="PS-06"
                   data-status="published"
@@ -782,30 +779,30 @@
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="font-code-inline text-code-inline bg-surface-container px-2 py-0.5 rounded text-on-surface font-semibold tracking-tight"
+                      class="font-code-inline text-code-inline bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl px-2 py-0.5 rounded text-white font-semibold tracking-tight"
                       >PS-06</span
                     >
                   </td>
                   <td class="py-3 px-space-sm">
                     <div class="flex items-center gap-space-xs flex-wrap">
                       <span
-                        class="font-body-md text-body-md text-on-surface font-medium"
+                        class="font-body-md text-body-md text-white font-medium"
                         >PS-06: Graph Cycle Detection with DFS</span
                       >
                       <span
-                        class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-mono"
+                        class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-highest text-white font-mono"
                         >Medium</span
                       >
                     </div>
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-secondary"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-slate-400"
                   >
                     Oct 16, 2024
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface bg-surface-container-low px-2 py-0.5 rounded-full"
+                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-white bg-slate-800/40 border border-white/5 px-2 py-0.5 rounded-full"
                     >
                       <span
                         class="w-1.5 h-1.5 rounded-full bg-primary inline-block"
@@ -818,17 +815,17 @@
                       class="inline-flex items-center justify-end gap-space-xs"
                     >
                       <button
-                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Edit
                       </button>
                       <button
-                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Assign
                       </button>
                       <button
-                        class="action-menu w-7 h-7 flex items-center justify-center rounded text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="action-menu w-7 h-7 flex items-center justify-center rounded text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         <span class="material-symbols-outlined text-[18px]"
                           >more_vert</span
@@ -839,7 +836,7 @@
                 </tr>
                 <!-- Row 7: PS-07 (Draft) -->
                 <tr
-                  class="problem-row hover:bg-surface-container-low/60 transition-colors"
+                  class="problem-row hover:bg-slate-800/40 border border-white/5/60 transition-colors"
                   data-division="Division D2"
                   data-id="PS-07"
                   data-status="draft"
@@ -852,34 +849,34 @@
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="font-code-inline text-code-inline bg-surface-container px-2 py-0.5 rounded text-on-surface font-semibold tracking-tight"
+                      class="font-code-inline text-code-inline bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl px-2 py-0.5 rounded text-white font-semibold tracking-tight"
                       >PS-07</span
                     >
                   </td>
                   <td class="py-3 px-space-sm">
                     <div class="flex items-center gap-space-xs flex-wrap">
                       <span
-                        class="font-body-md text-body-md text-on-surface font-medium"
+                        class="font-body-md text-body-md text-white font-medium"
                         >PS-07: Binary Search in Rotated Array</span
                       >
                       <span
-                        class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-mono"
+                        class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-highest text-white font-mono"
                         >Medium</span
                       >
                       <span
-                        class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-surface-container text-secondary font-mono tracking-wider"
+                        class="font-label-sm text-label-sm px-1.5 py-0.2 rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-400 font-mono tracking-wider"
                         >DRAFT</span
                       >
                     </div>
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-secondary"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-slate-400"
                   >
                     Oct 19, 2024
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-secondary bg-surface-container-low px-2 py-0.5 rounded-full"
+                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-slate-400 bg-slate-800/40 border border-white/5 px-2 py-0.5 rounded-full"
                     >
                       <span
                         class="w-1.5 h-1.5 rounded-full bg-outline inline-block"
@@ -892,17 +889,17 @@
                       class="inline-flex items-center justify-end gap-space-xs"
                     >
                       <button
-                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Edit
                       </button>
                       <button
-                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="action-btn px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Assign
                       </button>
                       <button
-                        class="action-menu w-7 h-7 flex items-center justify-center rounded text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="action-menu w-7 h-7 flex items-center justify-center rounded text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         <span class="material-symbols-outlined text-[18px]"
                           >more_vert</span
@@ -923,16 +920,16 @@
               >find_in_page</span
             >
             <p
-              class="font-headline-sm text-headline-sm text-on-surface font-medium"
+              class="font-headline-sm text-headline-sm text-white font-medium"
             >
               No matching problem statements found
             </p>
-            <p class="font-body-sm text-body-sm text-secondary max-w-sm">
+            <p class="font-body-sm text-body-sm text-slate-400 max-w-sm">
               Try modifying your keyword search or adjusting the cohort filter
               parameters.
             </p>
             <button
-              class="mt-space-xs h-8 px-space-md rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-colors"
+              class="mt-space-xs h-8 px-space-md rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-high text-white font-label-sm text-label-sm hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
               id="clear-filters-btn"
             >
               Reset Filters
@@ -940,10 +937,10 @@
           </div>
           <!-- Table Footer / Telemetry Bar -->
           <div
-            class="bg-surface-container-low/40 px-space-lg py-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md"
+            class="bg-slate-800/40 border border-white/5/40 px-space-lg py-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md"
           >
             <div
-              class="flex items-center gap-space-md font-label-sm text-label-sm text-secondary leading-relaxed"
+              class="flex items-center gap-space-md font-label-sm text-label-sm text-slate-400 leading-relaxed"
             >
               <span class="" id="footer-count"
                 >Showing 1-7 of 7 problem statements</span
@@ -951,7 +948,7 @@
               <div class="flex items-center gap-space-xs">
                 <span class="font-mono text-outline">SELECTED:</span
                 ><span
-                  class="font-mono font-medium text-on-surface"
+                  class="font-mono font-medium text-white"
                   id="selected-badge"
                   >0</span
                 >
@@ -959,34 +956,34 @@
             </div>
             <div class="flex items-center gap-space-xs">
               <button
-                class="h-8 px-space-md rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                class="h-8 px-space-md rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
                 disabled=""
                 id="bulk-assign-btn"
               >
                 Bulk Assign</button
               ><button
-                class="h-8 px-space-md rounded font-label-sm text-label-sm text-secondary hover:text-error hover:bg-error-container/40 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                class="h-8 px-space-md rounded font-label-sm text-label-sm text-slate-400 hover:text-error hover:bg-error-container/40 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
                 disabled=""
                 id="bulk-archive-btn"
               >
                 Bulk Archive
               </button>
               <div
-                class="h-4 w-px bg-surface-container-high mx-space-2xs"
+                class="h-4 w-px bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-high mx-space-2xs"
               ></div>
               <div class="flex items-center gap-1">
                 <button
-                  class="w-8 h-8 rounded flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors disabled:opacity-30"
+                  class="w-8 h-8 rounded flex items-center justify-center text-outline hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors disabled:opacity-30"
                   disabled=""
                 >
                   <span class="material-symbols-outlined text-[18px]"
                     >chevron_left</span
                   ></button
                 ><span
-                  class="font-mono font-label-sm text-label-sm px-2 text-on-surface"
+                  class="font-mono font-label-sm text-label-sm px-2 text-white"
                   >Page 1 of 1</span
                 ><button
-                  class="w-8 h-8 rounded flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors disabled:opacity-30"
+                  class="w-8 h-8 rounded flex items-center justify-center text-outline hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors disabled:opacity-30"
                   disabled=""
                 >
                   <span class="material-symbols-outlined text-[18px]"
@@ -1000,69 +997,69 @@
         <!-- Telemetry Strip: Operational Metrics -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg mt-space-xl">
           <div
-            class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between"
+            class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-xl p-space-lg shadow-sm flex flex-col justify-between"
           >
             <span
-              class="font-label-sm text-label-sm text-secondary uppercase tracking-wider leading-relaxed"
+              class="font-label-sm text-label-sm text-slate-400 uppercase tracking-wider leading-relaxed"
               >Total Repository</span
             >
             <div class="flex items-baseline justify-between mt-space-sm">
               <span
-                class="font-headline-md text-headline-md font-semibold text-on-surface leading-tight"
+                class="font-headline-md text-headline-md font-semibold text-white leading-tight"
                 >7</span
               ><span
-                class="font-label-sm text-label-sm text-secondary font-mono"
+                class="font-label-sm text-label-sm text-slate-400 font-mono"
                 >100% INDEXED</span
               >
             </div>
           </div>
           <div
-            class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between"
+            class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-xl p-space-lg shadow-sm flex flex-col justify-between"
           >
             <span
-              class="font-label-sm text-label-sm text-secondary uppercase tracking-wider leading-relaxed"
+              class="font-label-sm text-label-sm text-slate-400 uppercase tracking-wider leading-relaxed"
               >Active Published</span
             >
             <div class="flex items-baseline justify-between mt-space-sm">
               <span
-                class="font-headline-md text-headline-md font-semibold text-on-surface leading-tight"
+                class="font-headline-md text-headline-md font-semibold text-white leading-tight"
                 >6</span
               ><span
-                class="font-label-sm text-label-sm text-secondary font-mono"
+                class="font-label-sm text-label-sm text-slate-400 font-mono"
                 >85.7% READY</span
               >
             </div>
           </div>
           <div
-            class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between"
+            class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-xl p-space-lg shadow-sm flex flex-col justify-between"
           >
             <span
-              class="font-label-sm text-label-sm text-secondary uppercase tracking-wider leading-relaxed"
+              class="font-label-sm text-label-sm text-slate-400 uppercase tracking-wider leading-relaxed"
               >Draft Workspaces</span
             >
             <div class="flex items-baseline justify-between mt-space-sm">
               <span
-                class="font-headline-md text-headline-md font-semibold text-on-surface leading-tight"
+                class="font-headline-md text-headline-md font-semibold text-white leading-tight"
                 >1</span
               ><span
-                class="font-label-sm text-label-sm text-secondary font-mono"
+                class="font-label-sm text-label-sm text-slate-400 font-mono"
                 >PENDING RELEASE</span
               >
             </div>
           </div>
           <div
-            class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between"
+            class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-xl p-space-lg shadow-sm flex flex-col justify-between"
           >
             <span
-              class="font-label-sm text-label-sm text-secondary uppercase tracking-wider leading-relaxed"
+              class="font-label-sm text-label-sm text-slate-400 uppercase tracking-wider leading-relaxed"
               >Cohort Coverage</span
             >
             <div class="flex items-baseline justify-between mt-space-sm">
               <span
-                class="font-headline-md text-headline-md font-semibold text-on-surface leading-tight"
+                class="font-headline-md text-headline-md font-semibold text-white leading-tight"
                 >6 Div</span
               ><span
-                class="font-label-sm text-label-sm text-secondary font-mono"
+                class="font-label-sm text-label-sm text-slate-400 font-mono"
                 >D1-D6 REACH</span
               >
             </div>
@@ -1083,12 +1080,12 @@
           <div class="flex flex-col gap-space-xs">
             <div class="flex items-baseline gap-space-md mt-1">
               <h1
-                class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight leading-normal"
+                class="font-headline-lg text-headline-lg text-white font-semibold tracking-tight leading-normal"
               >
                 Student Progress
               </h1>
               <span
-                class="font-label-md text-label-md text-secondary ml-2"
+                class="font-label-md text-label-md text-slate-400 ml-2"
                 id="student-record-counter"
                 >Showing 7 active students</span
               >
@@ -1096,7 +1093,7 @@
           </div>
           <div class="flex items-center gap-space-md">
             <button
-              class="h-10 px-space-lg rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-colors flex items-center gap-space-xs"
+              class="h-10 px-space-lg rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white font-label-md text-label-md shadow-sm hover:bg-slate-800/40 border border-white/5 transition-colors flex items-center gap-space-xs"
             >
               <span class="material-symbols-outlined text-[18px]"
                 >file_download</span
@@ -1113,7 +1110,7 @@
         </div>
         <!-- Controls Bar: Filter, Search & Segmented Status -->
         <div
-          class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md mb-space-xl"
+          class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-xl p-space-md shadow-sm flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md mb-space-xl"
         >
           <div
             class="flex flex-1 flex-col sm:flex-row items-center gap-space-sm"
@@ -1124,15 +1121,14 @@
                 >search</span
               >
               <input
-                class="w-full h-10 pl-9 pr-3 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface placeholder:text-outline outline-none focus:bg-surface-container-lowest transition-colors"
+                class="w-full h-10 pl-9 pr-3 bg-slate-800/40 border border-white/5 rounded font-body-sm text-body-sm text-white placeholder:text-outline outline-none focus:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                 id="student-search"
                 placeholder="Search by name or enrollment no..."
                 type="text"
               />
             </div>
             <div class="relative w-full sm:w-56">
-              <select
-                class="w-full h-10 pl-3 pr-8 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface outline-none appearance-none cursor-pointer"
+              <select class="[&>option]:bg-slate-900 [&>option]:text-white w-full h-10 pl-3 pr-8 bg-slate-800/40 border border-white/5 rounded font-body-sm text-body-sm text-white outline-none appearance-none cursor-pointer"
                 id="student-cohort-filter"
               >
                 <option value="all">All Cohorts (D1 - D6)</option>
@@ -1150,28 +1146,28 @@
             </div>
           </div>
           <div
-            class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-full self-start sm:self-auto"
+            class="flex items-center gap-space-xs bg-slate-800/40 border border-white/5 p-1 rounded-full self-start sm:self-auto"
           >
             <button
-              class="student-status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all bg-surface-container-lowest text-on-surface shadow-sm font-medium"
+              class="student-status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white shadow-sm font-medium"
               data-status="all"
             >
               All
             </button>
             <button
-              class="student-status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all text-secondary hover:text-on-surface"
+              class="student-status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all text-slate-400 hover:text-white"
               data-status="on-track"
             >
               On Track
             </button>
             <button
-              class="student-status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all text-secondary hover:text-on-surface"
+              class="student-status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all text-slate-400 hover:text-white"
               data-status="needs-review"
             >
               Needs Review
             </button>
             <button
-              class="student-status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all text-secondary hover:text-on-surface"
+              class="student-status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all text-slate-400 hover:text-white"
               data-status="inactive"
             >
               Inactive
@@ -1180,12 +1176,12 @@
         </div>
         <!-- Main Student Progress Table Card -->
         <div
-          class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col"
+          class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-xl shadow-sm overflow-hidden flex flex-col"
         >
           <div class="overflow-x-auto w-full">
             <table class="w-full text-left table-fixed min-w-[860px]">
               <thead>
-                <tr class="bg-surface-container-low">
+                <tr class="bg-slate-800/40 border border-white/5">
                   <th class="w-12 py-3 pl-space-md text-left">
                     <input
                       class="rounded accent-primary w-4 h-4 cursor-pointer"
@@ -1193,32 +1189,32 @@
                     />
                   </th>
                   <th
-                    class="w-56 py-3 px-space-sm font-label-sm text-label-sm text-secondary uppercase tracking-wider font-medium"
+                    class="w-56 py-3 px-space-sm font-label-sm text-label-sm text-slate-400 uppercase tracking-wider font-medium"
                   >
                     Student Name &amp; Enrollment
                   </th>
                   <th
-                    class="w-28 py-3 px-space-sm font-label-sm text-label-sm text-secondary uppercase tracking-wider font-medium"
+                    class="w-28 py-3 px-space-sm font-label-sm text-label-sm text-slate-400 uppercase tracking-wider font-medium"
                   >
                     Cohort
                   </th>
                   <th
-                    class="w-32 py-3 px-space-sm font-label-sm text-label-sm text-secondary uppercase tracking-wider font-medium"
+                    class="w-32 py-3 px-space-sm font-label-sm text-label-sm text-slate-400 uppercase tracking-wider font-medium"
                   >
                     Solved / Total
                   </th>
                   <th
-                    class="w-2/5 py-3 px-space-sm font-label-sm text-label-sm text-secondary uppercase tracking-wider font-medium"
+                    class="w-2/5 py-3 px-space-sm font-label-sm text-label-sm text-slate-400 uppercase tracking-wider font-medium"
                   >
                     Current Working PS
                   </th>
                   <th
-                    class="w-36 py-3 px-space-sm font-label-sm text-label-sm text-secondary uppercase tracking-wider font-medium"
+                    class="w-36 py-3 px-space-sm font-label-sm text-label-sm text-slate-400 uppercase tracking-wider font-medium"
                   >
                     Status &amp; Submission
                   </th>
                   <th
-                    class="w-36 py-3 pr-space-md text-right font-label-sm text-label-sm text-secondary uppercase tracking-wider font-medium"
+                    class="w-36 py-3 pr-space-md text-right font-label-sm text-label-sm text-slate-400 uppercase tracking-wider font-medium"
                   >
                     Action
                   </th>
@@ -1230,7 +1226,7 @@
               >
                 <!-- Student 1 -->
                 <tr
-                  class="student-row hover:bg-surface-container-low/60 transition-colors"
+                  class="student-row hover:bg-slate-800/40 border border-white/5/60 transition-colors"
                   data-cohort="D1"
                   data-status="on-track"
                 >
@@ -1243,34 +1239,34 @@
                   <td class="py-3 px-space-sm">
                     <div class="flex flex-col">
                       <span
-                        class="font-body-md text-body-md text-on-surface font-semibold"
+                        class="font-body-md text-body-md text-white font-semibold"
                         >Aarav Sharma</span
                       >
                       <span
-                        class="font-code-inline text-code-inline text-secondary font-mono text-xs"
+                        class="font-code-inline text-code-inline text-slate-400 font-mono text-xs"
                         >2023-CS-041</span
                       >
                     </div>
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface bg-surface-container-low px-2 py-0.5 rounded-full font-medium"
+                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-white bg-slate-800/40 border border-white/5 px-2 py-0.5 rounded-full font-medium"
                       >Division D1</span
                     >
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-on-surface font-medium"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-white font-medium"
                   >
                     <span class="font-semibold">7 / 7</span>
-                    <span class="text-secondary text-xs">(100%)</span>
+                    <span class="text-slate-400 text-xs">(100%)</span>
                   </td>
                   <td class="py-3 px-space-sm">
                     <div class="flex items-center gap-space-xs">
                       <span
-                        class="font-code-inline text-code-inline bg-surface-container px-1.5 py-0.5 rounded text-xs font-semibold"
+                        class="font-code-inline text-code-inline bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl px-1.5 py-0.5 rounded text-xs font-semibold"
                         >PS-06</span
                       >
-                      <span class="font-body-sm text-body-sm text-on-surface"
+                      <span class="font-body-sm text-body-sm text-white"
                         >Graph Cycle Detection with DFS</span
                       >
                     </div>
@@ -1278,14 +1274,14 @@
                   <td class="py-3 px-space-sm">
                     <div class="flex flex-col">
                       <span
-                        class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface font-medium"
+                        class="inline-flex items-center gap-1 font-label-sm text-label-sm text-white font-medium"
                       >
                         <span
                           class="w-1.5 h-1.5 rounded-full bg-primary inline-block"
                         ></span>
                         Passed
                       </span>
-                      <span class="font-body-sm text-xs text-secondary"
+                      <span class="font-body-sm text-xs text-slate-400"
                         >Oct 20, 2024</span
                       >
                     </div>
@@ -1295,12 +1291,12 @@
                       class="inline-flex items-center justify-end gap-space-xs"
                     >
                       <button
-                        class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="px-2.5 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Review Code
                       </button>
                       <button
-                        class="w-7 h-7 flex items-center justify-center rounded text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="w-7 h-7 flex items-center justify-center rounded text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         <span class="material-symbols-outlined text-[18px]"
                           >more_vert</span
@@ -1311,7 +1307,7 @@
                 </tr>
                 <!-- Student 2 -->
                 <tr
-                  class="student-row hover:bg-surface-container-low/60 transition-colors"
+                  class="student-row hover:bg-slate-800/40 border border-white/5/60 transition-colors"
                   data-cohort="D1"
                   data-status="needs-review"
                 >
@@ -1324,34 +1320,34 @@
                   <td class="py-3 px-space-sm">
                     <div class="flex flex-col">
                       <span
-                        class="font-body-md text-body-md text-on-surface font-semibold"
+                        class="font-body-md text-body-md text-white font-semibold"
                         >Devanshi Mehta</span
                       >
                       <span
-                        class="font-code-inline text-code-inline text-secondary font-mono text-xs"
+                        class="font-code-inline text-code-inline text-slate-400 font-mono text-xs"
                         >2023-CS-088</span
                       >
                     </div>
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface bg-surface-container-low px-2 py-0.5 rounded-full font-medium"
+                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-white bg-slate-800/40 border border-white/5 px-2 py-0.5 rounded-full font-medium"
                       >Division D1</span
                     >
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-on-surface font-medium"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-white font-medium"
                   >
                     <span class="font-semibold">6 / 7</span>
-                    <span class="text-secondary text-xs">(85%)</span>
+                    <span class="text-slate-400 text-xs">(85%)</span>
                   </td>
                   <td class="py-3 px-space-sm">
                     <div class="flex items-center gap-space-xs">
                       <span
-                        class="font-code-inline text-code-inline bg-surface-container px-1.5 py-0.5 rounded text-xs font-semibold"
+                        class="font-code-inline text-code-inline bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl px-1.5 py-0.5 rounded text-xs font-semibold"
                         >PS-03</span
                       >
-                      <span class="font-body-sm text-body-sm text-on-surface"
+                      <span class="font-body-sm text-body-sm text-white"
                         >Merge K Sorted Linked Lists</span
                       >
                     </div>
@@ -1359,14 +1355,14 @@
                   <td class="py-3 px-space-sm">
                     <div class="flex flex-col">
                       <span
-                        class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface font-medium"
+                        class="inline-flex items-center gap-1 font-label-sm text-label-sm text-white font-medium"
                       >
                         <span
                           class="w-1.5 h-1.5 rounded-full bg-secondary inline-block"
                         ></span>
                         Review Req.
                       </span>
-                      <span class="font-body-sm text-xs text-secondary"
+                      <span class="font-body-sm text-xs text-slate-400"
                         >Oct 19, 2024</span
                       >
                     </div>
@@ -1376,12 +1372,12 @@
                       class="inline-flex items-center justify-end gap-space-xs"
                     >
                       <button
-                        class="px-2.5 py-1 rounded font-label-sm text-label-sm text-on-surface bg-surface-container-high hover:bg-surface-container transition-colors font-medium"
+                        class="px-2.5 py-1 rounded font-label-sm text-label-sm text-white bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-high hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors font-medium"
                       >
                         Review Code
                       </button>
                       <button
-                        class="w-7 h-7 flex items-center justify-center rounded text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="w-7 h-7 flex items-center justify-center rounded text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         <span class="material-symbols-outlined text-[18px]"
                           >more_vert</span
@@ -1392,7 +1388,7 @@
                 </tr>
                 <!-- Student 3 -->
                 <tr
-                  class="student-row hover:bg-surface-container-low/60 transition-colors"
+                  class="student-row hover:bg-slate-800/40 border border-white/5/60 transition-colors"
                   data-cohort="D2"
                   data-status="on-track"
                 >
@@ -1405,34 +1401,34 @@
                   <td class="py-3 px-space-sm">
                     <div class="flex flex-col">
                       <span
-                        class="font-body-md text-body-md text-on-surface font-semibold"
+                        class="font-body-md text-body-md text-white font-semibold"
                         >Rohan Kulkarni</span
                       >
                       <span
-                        class="font-code-inline text-code-inline text-secondary font-mono text-xs"
+                        class="font-code-inline text-code-inline text-slate-400 font-mono text-xs"
                         >2023-CS-112</span
                       >
                     </div>
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface bg-surface-container-low px-2 py-0.5 rounded-full font-medium"
+                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-white bg-slate-800/40 border border-white/5 px-2 py-0.5 rounded-full font-medium"
                       >Division D2</span
                     >
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-on-surface font-medium"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-white font-medium"
                   >
                     <span class="font-semibold">5 / 7</span>
-                    <span class="text-secondary text-xs">(71%)</span>
+                    <span class="text-slate-400 text-xs">(71%)</span>
                   </td>
                   <td class="py-3 px-space-sm">
                     <div class="flex items-center gap-space-xs">
                       <span
-                        class="font-code-inline text-code-inline bg-surface-container px-1.5 py-0.5 rounded text-xs font-semibold"
+                        class="font-code-inline text-code-inline bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl px-1.5 py-0.5 rounded text-xs font-semibold"
                         >PS-05</span
                       >
-                      <span class="font-body-sm text-body-sm text-on-surface"
+                      <span class="font-body-sm text-body-sm text-white"
                         >Dynamic Programming Knapsack</span
                       >
                     </div>
@@ -1440,14 +1436,14 @@
                   <td class="py-3 px-space-sm">
                     <div class="flex flex-col">
                       <span
-                        class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface font-medium"
+                        class="inline-flex items-center gap-1 font-label-sm text-label-sm text-white font-medium"
                       >
                         <span
                           class="w-1.5 h-1.5 rounded-full bg-primary inline-block"
                         ></span>
                         Passed
                       </span>
-                      <span class="font-body-sm text-xs text-secondary"
+                      <span class="font-body-sm text-xs text-slate-400"
                         >Oct 18, 2024</span
                       >
                     </div>
@@ -1457,12 +1453,12 @@
                       class="inline-flex items-center justify-end gap-space-xs"
                     >
                       <button
-                        class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="px-2.5 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Review Code
                       </button>
                       <button
-                        class="w-7 h-7 flex items-center justify-center rounded text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="w-7 h-7 flex items-center justify-center rounded text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         <span class="material-symbols-outlined text-[18px]"
                           >more_vert</span
@@ -1473,7 +1469,7 @@
                 </tr>
                 <!-- Student 4 -->
                 <tr
-                  class="student-row hover:bg-surface-container-low/60 transition-colors"
+                  class="student-row hover:bg-slate-800/40 border border-white/5/60 transition-colors"
                   data-cohort="D3"
                   data-status="needs-review"
                 >
@@ -1486,34 +1482,34 @@
                   <td class="py-3 px-space-sm">
                     <div class="flex flex-col">
                       <span
-                        class="font-body-md text-body-md text-on-surface font-semibold"
+                        class="font-body-md text-body-md text-white font-semibold"
                         >Ananya Iyer</span
                       >
                       <span
-                        class="font-code-inline text-code-inline text-secondary font-mono text-xs"
+                        class="font-code-inline text-code-inline text-slate-400 font-mono text-xs"
                         >2023-CS-023</span
                       >
                     </div>
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface bg-surface-container-low px-2 py-0.5 rounded-full font-medium"
+                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-white bg-slate-800/40 border border-white/5 px-2 py-0.5 rounded-full font-medium"
                       >Division D3</span
                     >
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-on-surface font-medium"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-white font-medium"
                   >
                     <span class="font-semibold">4 / 7</span>
-                    <span class="text-secondary text-xs">(57%)</span>
+                    <span class="text-slate-400 text-xs">(57%)</span>
                   </td>
                   <td class="py-3 px-space-sm">
                     <div class="flex items-center gap-space-xs">
                       <span
-                        class="font-code-inline text-code-inline bg-surface-container px-1.5 py-0.5 rounded text-xs font-semibold"
+                        class="font-code-inline text-code-inline bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl px-1.5 py-0.5 rounded text-xs font-semibold"
                         >PS-03</span
                       >
-                      <span class="font-body-sm text-body-sm text-on-surface"
+                      <span class="font-body-sm text-body-sm text-white"
                         >Merge K Sorted Linked Lists</span
                       >
                     </div>
@@ -1521,14 +1517,14 @@
                   <td class="py-3 px-space-sm">
                     <div class="flex flex-col">
                       <span
-                        class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface font-medium"
+                        class="inline-flex items-center gap-1 font-label-sm text-label-sm text-white font-medium"
                       >
                         <span
                           class="w-1.5 h-1.5 rounded-full bg-secondary inline-block"
                         ></span>
                         Review Req.
                       </span>
-                      <span class="font-body-sm text-xs text-secondary"
+                      <span class="font-body-sm text-xs text-slate-400"
                         >Oct 17, 2024</span
                       >
                     </div>
@@ -1538,12 +1534,12 @@
                       class="inline-flex items-center justify-end gap-space-xs"
                     >
                       <button
-                        class="px-2.5 py-1 rounded font-label-sm text-label-sm text-on-surface bg-surface-container-high hover:bg-surface-container transition-colors font-medium"
+                        class="px-2.5 py-1 rounded font-label-sm text-label-sm text-white bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-high hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors font-medium"
                       >
                         Review Code
                       </button>
                       <button
-                        class="w-7 h-7 flex items-center justify-center rounded text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="w-7 h-7 flex items-center justify-center rounded text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         <span class="material-symbols-outlined text-[18px]"
                           >more_vert</span
@@ -1554,7 +1550,7 @@
                 </tr>
                 <!-- Student 5 -->
                 <tr
-                  class="student-row hover:bg-surface-container-low/60 transition-colors"
+                  class="student-row hover:bg-slate-800/40 border border-white/5/60 transition-colors"
                   data-cohort="D4"
                   data-status="on-track"
                 >
@@ -1567,34 +1563,34 @@
                   <td class="py-3 px-space-sm">
                     <div class="flex flex-col">
                       <span
-                        class="font-body-md text-body-md text-on-surface font-semibold"
+                        class="font-body-md text-body-md text-white font-semibold"
                         >Siddharth Rao</span
                       >
                       <span
-                        class="font-code-inline text-code-inline text-secondary font-mono text-xs"
+                        class="font-code-inline text-code-inline text-slate-400 font-mono text-xs"
                         >2023-CS-155</span
                       >
                     </div>
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface bg-surface-container-low px-2 py-0.5 rounded-full font-medium"
+                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-white bg-slate-800/40 border border-white/5 px-2 py-0.5 rounded-full font-medium"
                       >Division D4</span
                     >
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-on-surface font-medium"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-white font-medium"
                   >
                     <span class="font-semibold">6 / 7</span>
-                    <span class="text-secondary text-xs">(85%)</span>
+                    <span class="text-slate-400 text-xs">(85%)</span>
                   </td>
                   <td class="py-3 px-space-sm">
                     <div class="flex items-center gap-space-xs">
                       <span
-                        class="font-code-inline text-code-inline bg-surface-container px-1.5 py-0.5 rounded text-xs font-semibold"
+                        class="font-code-inline text-code-inline bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl px-1.5 py-0.5 rounded text-xs font-semibold"
                         >PS-04</span
                       >
-                      <span class="font-body-sm text-body-sm text-on-surface"
+                      <span class="font-body-sm text-body-sm text-white"
                         >Reverse a Singly Linked List</span
                       >
                     </div>
@@ -1602,14 +1598,14 @@
                   <td class="py-3 px-space-sm">
                     <div class="flex flex-col">
                       <span
-                        class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface font-medium"
+                        class="inline-flex items-center gap-1 font-label-sm text-label-sm text-white font-medium"
                       >
                         <span
                           class="w-1.5 h-1.5 rounded-full bg-primary inline-block"
                         ></span>
                         Passed
                       </span>
-                      <span class="font-body-sm text-xs text-secondary"
+                      <span class="font-body-sm text-xs text-slate-400"
                         >Oct 16, 2024</span
                       >
                     </div>
@@ -1619,12 +1615,12 @@
                       class="inline-flex items-center justify-end gap-space-xs"
                     >
                       <button
-                        class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="px-2.5 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Review Code
                       </button>
                       <button
-                        class="w-7 h-7 flex items-center justify-center rounded text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="w-7 h-7 flex items-center justify-center rounded text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         <span class="material-symbols-outlined text-[18px]"
                           >more_vert</span
@@ -1635,7 +1631,7 @@
                 </tr>
                 <!-- Student 6 -->
                 <tr
-                  class="student-row hover:bg-surface-container-low/60 transition-colors"
+                  class="student-row hover:bg-slate-800/40 border border-white/5/60 transition-colors"
                   data-cohort="D5"
                   data-status="on-track"
                 >
@@ -1648,34 +1644,34 @@
                   <td class="py-3 px-space-sm">
                     <div class="flex flex-col">
                       <span
-                        class="font-body-md text-body-md text-on-surface font-semibold"
+                        class="font-body-md text-body-md text-white font-semibold"
                         >Priya Sen</span
                       >
                       <span
-                        class="font-code-inline text-code-inline text-secondary font-mono text-xs"
+                        class="font-code-inline text-code-inline text-slate-400 font-mono text-xs"
                         >2023-CS-190</span
                       >
                     </div>
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface bg-surface-container-low px-2 py-0.5 rounded-full font-medium"
+                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-white bg-slate-800/40 border border-white/5 px-2 py-0.5 rounded-full font-medium"
                       >Division D5</span
                     >
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-on-surface font-medium"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-white font-medium"
                   >
                     <span class="font-semibold">5 / 7</span>
-                    <span class="text-secondary text-xs">(71%)</span>
+                    <span class="text-slate-400 text-xs">(71%)</span>
                   </td>
                   <td class="py-3 px-space-sm">
                     <div class="flex items-center gap-space-xs">
                       <span
-                        class="font-code-inline text-code-inline bg-surface-container px-1.5 py-0.5 rounded text-xs font-semibold"
+                        class="font-code-inline text-code-inline bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl px-1.5 py-0.5 rounded text-xs font-semibold"
                         >PS-05</span
                       >
-                      <span class="font-body-sm text-body-sm text-on-surface"
+                      <span class="font-body-sm text-body-sm text-white"
                         >Dynamic Programming Knapsack</span
                       >
                     </div>
@@ -1683,14 +1679,14 @@
                   <td class="py-3 px-space-sm">
                     <div class="flex flex-col">
                       <span
-                        class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface font-medium"
+                        class="inline-flex items-center gap-1 font-label-sm text-label-sm text-white font-medium"
                       >
                         <span
                           class="w-1.5 h-1.5 rounded-full bg-outline inline-block"
                         ></span>
                         In Progress
                       </span>
-                      <span class="font-body-sm text-xs text-secondary"
+                      <span class="font-body-sm text-xs text-slate-400"
                         >Oct 15, 2024</span
                       >
                     </div>
@@ -1700,12 +1696,12 @@
                       class="inline-flex items-center justify-end gap-space-xs"
                     >
                       <button
-                        class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="px-2.5 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Review Code
                       </button>
                       <button
-                        class="w-7 h-7 flex items-center justify-center rounded text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="w-7 h-7 flex items-center justify-center rounded text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         <span class="material-symbols-outlined text-[18px]"
                           >more_vert</span
@@ -1716,7 +1712,7 @@
                 </tr>
                 <!-- Student 7 -->
                 <tr
-                  class="student-row hover:bg-surface-container-low/60 transition-colors"
+                  class="student-row hover:bg-slate-800/40 border border-white/5/60 transition-colors"
                   data-cohort="D6"
                   data-status="inactive"
                 >
@@ -1729,34 +1725,34 @@
                   <td class="py-3 px-space-sm">
                     <div class="flex flex-col">
                       <span
-                        class="font-body-md text-body-md text-on-surface font-semibold"
+                        class="font-body-md text-body-md text-white font-semibold"
                         >Kabir Das</span
                       >
                       <span
-                        class="font-code-inline text-code-inline text-secondary font-mono text-xs"
+                        class="font-code-inline text-code-inline text-slate-400 font-mono text-xs"
                         >2023-CS-204</span
                       >
                     </div>
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface bg-surface-container-low px-2 py-0.5 rounded-full font-medium"
+                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-white bg-slate-800/40 border border-white/5 px-2 py-0.5 rounded-full font-medium"
                       >Division D6</span
                     >
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-on-surface font-medium"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-white font-medium"
                   >
                     <span class="font-semibold">2 / 7</span>
-                    <span class="text-secondary text-xs">(28%)</span>
+                    <span class="text-slate-400 text-xs">(28%)</span>
                   </td>
                   <td class="py-3 px-space-sm">
                     <div class="flex items-center gap-space-xs">
                       <span
-                        class="font-code-inline text-code-inline bg-surface-container px-1.5 py-0.5 rounded text-xs font-semibold"
+                        class="font-code-inline text-code-inline bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl px-1.5 py-0.5 rounded text-xs font-semibold"
                         >PS-02</span
                       >
-                      <span class="font-body-sm text-body-sm text-on-surface"
+                      <span class="font-body-sm text-body-sm text-white"
                         >Valid Parentheses Stack Evaluator</span
                       >
                     </div>
@@ -1771,7 +1767,7 @@
                         ></span>
                         Inactive
                       </span>
-                      <span class="font-body-sm text-xs text-secondary"
+                      <span class="font-body-sm text-xs text-slate-400"
                         >Oct 03, 2024</span
                       >
                     </div>
@@ -1781,12 +1777,12 @@
                       class="inline-flex items-center justify-end gap-space-xs"
                     >
                       <button
-                        class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="px-2.5 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         View Details
                       </button>
                       <button
-                        class="w-7 h-7 flex items-center justify-center rounded text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="w-7 h-7 flex items-center justify-center rounded text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         <span class="material-symbols-outlined text-[18px]"
                           >more_vert</span
@@ -1800,10 +1796,10 @@
           </div>
           <!-- Student Table Footer -->
           <div
-            class="bg-surface-container-low/40 px-space-lg py-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md"
+            class="bg-slate-800/40 border border-white/5/40 px-space-lg py-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md"
           >
             <div
-              class="flex items-center gap-space-md font-label-sm text-label-sm text-secondary leading-relaxed"
+              class="flex items-center gap-space-md font-label-sm text-label-sm text-slate-400 leading-relaxed"
             >
               <span id="student-footer-count" class=""
                 >Showing 1-7 of 184 enrolled students</span
@@ -1811,16 +1807,16 @@
             </div>
             <div class="flex items-center gap-space-xs">
               <button
-                class="h-8 px-space-md rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                class="h-8 px-space-md rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
               >
                 Export Filtered
               </button>
               <div
-                class="h-4 w-px bg-surface-container-high mx-space-2xs"
+                class="h-4 w-px bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-high mx-space-2xs"
               ></div>
               <div class="flex items-center gap-1">
                 <button
-                  class="w-8 h-8 rounded flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors disabled:opacity-30"
+                  class="w-8 h-8 rounded flex items-center justify-center text-outline hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors disabled:opacity-30"
                   disabled=""
                 >
                   <span class="material-symbols-outlined text-[18px]"
@@ -1828,11 +1824,11 @@
                   >
                 </button>
                 <span
-                  class="font-mono font-label-sm text-label-sm px-2 text-on-surface"
+                  class="font-mono font-label-sm text-label-sm px-2 text-white"
                   >Page 1 of 27</span
                 >
                 <button
-                  class="w-8 h-8 rounded flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors"
+                  class="w-8 h-8 rounded flex items-center justify-center text-outline hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                 >
                   <span class="material-symbols-outlined text-[18px]"
                     >chevron_right</span
@@ -1845,69 +1841,69 @@
         <!-- Telemetry Strip: Student Overview Metrics -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg mt-space-xl">
           <div
-            class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between"
+            class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-xl p-space-lg shadow-sm flex flex-col justify-between"
           >
             <span
-              class="font-label-sm text-label-sm text-secondary uppercase tracking-wider leading-relaxed"
+              class="font-label-sm text-label-sm text-slate-400 uppercase tracking-wider leading-relaxed"
               >Total Active Students</span
             >
             <div class="flex items-baseline justify-between mt-space-sm">
               <span
-                class="font-headline-md text-headline-md font-semibold text-on-surface leading-tight"
+                class="font-headline-md text-headline-md font-semibold text-white leading-tight"
                 >184</span
               >
-              <span class="font-label-sm text-label-sm text-secondary font-mono"
+              <span class="font-label-sm text-label-sm text-slate-400 font-mono"
                 >D1-D6 ACTIVE</span
               >
             </div>
           </div>
           <div
-            class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between"
+            class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-xl p-space-lg shadow-sm flex flex-col justify-between"
           >
             <span
-              class="font-label-sm text-label-sm text-secondary uppercase tracking-wider leading-relaxed"
+              class="font-label-sm text-label-sm text-slate-400 uppercase tracking-wider leading-relaxed"
               >Avg Problems Solved</span
             >
             <div class="flex items-baseline justify-between mt-space-sm">
               <span
-                class="font-headline-md text-headline-md font-semibold text-on-surface leading-tight"
+                class="font-headline-md text-headline-md font-semibold text-white leading-tight"
                 >14.2</span
               >
-              <span class="font-label-sm text-label-sm text-secondary font-mono"
+              <span class="font-label-sm text-label-sm text-slate-400 font-mono"
                 >PER STUDENT</span
               >
             </div>
           </div>
           <div
-            class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between"
+            class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-xl p-space-lg shadow-sm flex flex-col justify-between"
           >
             <span
-              class="font-label-sm text-label-sm text-secondary uppercase tracking-wider leading-relaxed"
+              class="font-label-sm text-label-sm text-slate-400 uppercase tracking-wider leading-relaxed"
               >Pending Reviews</span
             >
             <div class="flex items-baseline justify-between mt-space-sm">
               <span
-                class="font-headline-md text-headline-md font-semibold text-on-surface leading-tight"
+                class="font-headline-md text-headline-md font-semibold text-white leading-tight"
                 >12</span
               >
-              <span class="font-label-sm text-label-sm text-secondary font-mono"
+              <span class="font-label-sm text-label-sm text-slate-400 font-mono"
                 >QUEUE PRIORITY</span
               >
             </div>
           </div>
           <div
-            class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between"
+            class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-xl p-space-lg shadow-sm flex flex-col justify-between"
           >
             <span
-              class="font-label-sm text-label-sm text-secondary uppercase tracking-wider leading-relaxed"
+              class="font-label-sm text-label-sm text-slate-400 uppercase tracking-wider leading-relaxed"
               >Overall Pass Rate</span
             >
             <div class="flex items-baseline justify-between mt-space-sm">
               <span
-                class="font-headline-md text-headline-md font-semibold text-on-surface leading-tight"
+                class="font-headline-md text-headline-md font-semibold text-white leading-tight"
                 >88.4%</span
               >
-              <span class="font-label-sm text-label-sm text-secondary font-mono"
+              <span class="font-label-sm text-label-sm text-slate-400 font-mono"
                 >FALL SEMESTER</span
               >
             </div>
@@ -1925,18 +1921,18 @@
           <div class="flex flex-col gap-space-xs">
             <div class="flex items-baseline gap-space-md mt-1">
               <h1
-                class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight leading-normal"
+                class="font-headline-lg text-headline-lg text-white font-semibold tracking-tight leading-normal"
               >
                 Meeting Schedule
               </h1>
-              <span class="font-label-md text-label-md text-secondary ml-2"
+              <span class="font-label-md text-label-md text-slate-400 ml-2"
                 >Showing 4 scheduled lab syncs</span
               >
             </div>
           </div>
           <div class="flex items-center gap-space-md">
             <button
-              class="h-10 px-space-lg rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-colors flex items-center gap-space-xs"
+              class="h-10 px-space-lg rounded bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white font-label-md text-label-md shadow-sm hover:bg-slate-800/40 border border-white/5 transition-colors flex items-center gap-space-xs"
             >
               <span class="material-symbols-outlined text-[18px]"
                 >calendar_month</span
@@ -1954,7 +1950,7 @@
         </div>
         <!-- Controls Bar: Filter, Search -->
         <div
-          class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md mb-space-xl"
+          class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-xl p-space-md shadow-sm flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md mb-space-xl"
         >
           <div
             class="flex flex-1 flex-col sm:flex-row items-center gap-space-sm"
@@ -1965,15 +1961,14 @@
                 >search</span
               >
               <input
-                class="w-full h-10 pl-9 pr-3 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface placeholder:text-outline outline-none focus:bg-surface-container-lowest transition-colors"
+                class="w-full h-10 pl-9 pr-3 bg-slate-800/40 border border-white/5 rounded font-body-sm text-body-sm text-white placeholder:text-outline outline-none focus:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                 id="meeting-search"
                 placeholder="Search sessions or labs..."
                 type="text"
               />
             </div>
             <div class="relative w-full sm:w-56">
-              <select
-                class="w-full h-10 pl-3 pr-8 bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface outline-none appearance-none cursor-pointer"
+              <select class="[&>option]:bg-slate-900 [&>option]:text-white w-full h-10 pl-3 pr-8 bg-slate-800/40 border border-white/5 rounded font-body-sm text-body-sm text-white outline-none appearance-none cursor-pointer"
                 id="meeting-cohort-filter"
               >
                 <option value="all">All Target Cohorts</option>
@@ -1989,28 +1984,28 @@
             </div>
           </div>
           <div
-            class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-full self-start sm:self-auto"
+            class="flex items-center gap-space-xs bg-slate-800/40 border border-white/5 p-1 rounded-full self-start sm:self-auto"
           >
             <button
-              class="meeting-status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all bg-surface-container-lowest text-on-surface shadow-sm font-medium"
+              class="meeting-status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-white shadow-sm font-medium"
               data-mstatus="all"
             >
               All Syncs
             </button>
             <button
-              class="meeting-status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all text-secondary hover:text-on-surface"
+              class="meeting-status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all text-slate-400 hover:text-white"
               data-mstatus="confirmed"
             >
               Confirmed
             </button>
             <button
-              class="meeting-status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all text-secondary hover:text-on-surface"
+              class="meeting-status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all text-slate-400 hover:text-white"
               data-mstatus="upcoming"
             >
               Upcoming
             </button>
             <button
-              class="meeting-status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all text-secondary hover:text-on-surface"
+              class="meeting-status-tab h-8 px-space-md rounded-full font-label-sm text-label-sm transition-all text-slate-400 hover:text-white"
               data-mstatus="draft"
             >
               Draft
@@ -2019,44 +2014,44 @@
         </div>
         <!-- Meeting Schedule Table Container -->
         <div
-          class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col"
+          class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-xl shadow-sm overflow-hidden flex flex-col"
         >
           <div class="overflow-x-auto w-full">
             <table class="w-full text-left table-fixed min-w-[880px]">
               <thead>
-                <tr class="bg-surface-container-low">
+                <tr class="bg-slate-800/40 border border-white/5">
                   <th
-                    class="w-2/5 py-3 pl-space-md px-space-sm font-label-sm text-label-sm text-secondary uppercase tracking-wider font-medium"
+                    class="w-2/5 py-3 pl-space-md px-space-sm font-label-sm text-label-sm text-slate-400 uppercase tracking-wider font-medium"
                   >
                     Session Title &amp; Details
                   </th>
                   <th
-                    class="w-36 py-3 px-space-sm font-label-sm text-label-sm text-secondary uppercase tracking-wider font-medium"
+                    class="w-36 py-3 px-space-sm font-label-sm text-label-sm text-slate-400 uppercase tracking-wider font-medium"
                   >
                     Target Cohort
                   </th>
                   <th
-                    class="w-56 py-3 px-space-sm font-label-sm text-label-sm text-secondary uppercase tracking-wider font-medium"
+                    class="w-56 py-3 px-space-sm font-label-sm text-label-sm text-slate-400 uppercase tracking-wider font-medium"
                   >
                     Date &amp; Schedule
                   </th>
                   <th
-                    class="w-48 py-3 px-space-sm font-label-sm text-label-sm text-secondary uppercase tracking-wider font-medium"
+                    class="w-48 py-3 px-space-sm font-label-sm text-label-sm text-slate-400 uppercase tracking-wider font-medium"
                   >
                     Location / Lab
                   </th>
                   <th
-                    class="w-40 py-3 px-space-sm font-label-sm text-label-sm text-secondary uppercase tracking-wider font-medium"
+                    class="w-40 py-3 px-space-sm font-label-sm text-label-sm text-slate-400 uppercase tracking-wider font-medium"
                   >
                     Lead Supervisor
                   </th>
                   <th
-                    class="w-28 py-3 px-space-sm font-label-sm text-label-sm text-secondary uppercase tracking-wider font-medium"
+                    class="w-28 py-3 px-space-sm font-label-sm text-label-sm text-slate-400 uppercase tracking-wider font-medium"
                   >
                     Status
                   </th>
                   <th
-                    class="w-36 py-3 pr-space-md text-right font-label-sm text-label-sm text-secondary uppercase tracking-wider font-medium"
+                    class="w-36 py-3 pr-space-md text-right font-label-sm text-label-sm text-slate-400 uppercase tracking-wider font-medium"
                   >
                     Actions
                   </th>
@@ -2068,24 +2063,24 @@
               >
                 <!-- Session 1 -->
                 <tr
-                  class="meeting-row hover:bg-surface-container-low/60 transition-colors"
+                  class="meeting-row hover:bg-slate-800/40 border border-white/5/60 transition-colors"
                   data-cohort="Division D1, D2"
                   data-mstatus="confirmed"
                 >
                   <td class="py-3 pl-space-md px-space-sm">
                     <div class="flex flex-col">
                       <span
-                        class="font-body-md text-body-md text-on-surface font-semibold"
+                        class="font-body-md text-body-md text-white font-semibold"
                         >C Debugging with GDB &amp; Valgrind Workshop</span
                       >
-                      <span class="font-body-sm text-secondary text-xs"
+                      <span class="font-body-sm text-slate-400 text-xs"
                         >Memory safety inspection and pointer trace review</span
                       >
                     </div>
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface bg-surface-container-low px-2 py-0.5 rounded-full font-medium"
+                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-white bg-slate-800/40 border border-white/5 px-2 py-0.5 rounded-full font-medium"
                     >
                       <span
                         class="w-1.5 h-1.5 rounded-full bg-primary inline-block"
@@ -2095,33 +2090,33 @@
                   </td>
                   <td class="py-3 px-space-sm">
                     <div
-                      class="flex flex-col font-body-sm text-body-sm text-on-surface"
+                      class="flex flex-col font-body-sm text-body-sm text-white"
                     >
                       <span class="font-medium">Oct 24, 2025</span>
-                      <span class="text-secondary text-xs"
+                      <span class="text-slate-400 text-xs"
                         >5:30 PM - 7:00 PM IST</span
                       >
                     </div>
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-on-surface"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-white"
                   >
                     <div class="flex items-center gap-1">
                       <span
-                        class="material-symbols-outlined text-[16px] text-secondary"
+                        class="material-symbols-outlined text-[16px] text-slate-400"
                         >meeting_room</span
                       >
                       <span class="">Turing Lab (CS 302)</span>
                     </div>
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-on-surface"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-white"
                   >
                     Prof. K. Venkatesh
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-mono"
+                      class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl-high text-white font-mono"
                       >Confirmed</span
                     >
                   </td>
@@ -2130,12 +2125,12 @@
                       class="inline-flex items-center justify-end gap-space-xs"
                     >
                       <button
-                        class="px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Attendees
                       </button>
                       <button
-                        class="px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Edit
                       </button>
@@ -2144,17 +2139,17 @@
                 </tr>
                 <!-- Session 2 -->
                 <tr
-                  class="meeting-row hover:bg-surface-container-low/60 transition-colors"
+                  class="meeting-row hover:bg-slate-800/40 border border-white/5/60 transition-colors"
                   data-cohort="Division D3"
                   data-mstatus="upcoming"
                 >
                   <td class="py-3 pl-space-md px-space-sm">
                     <div class="flex flex-col">
                       <span
-                        class="font-body-md text-body-md text-on-surface font-semibold"
+                        class="font-body-md text-body-md text-white font-semibold"
                         >Pointer Arithmetic &amp; Linked List Review Lab</span
                       >
-                      <span class="font-body-sm text-secondary text-xs"
+                      <span class="font-body-sm text-slate-400 text-xs"
                         >Clarification on PS-03 &amp; PS-04 edge test
                         suites</span
                       >
@@ -2162,7 +2157,7 @@
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface bg-surface-container-low px-2 py-0.5 rounded-full font-medium"
+                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-white bg-slate-800/40 border border-white/5 px-2 py-0.5 rounded-full font-medium"
                     >
                       <span
                         class="w-1.5 h-1.5 rounded-full bg-primary inline-block"
@@ -2172,27 +2167,27 @@
                   </td>
                   <td class="py-3 px-space-sm">
                     <div
-                      class="flex flex-col font-body-sm text-body-sm text-on-surface"
+                      class="flex flex-col font-body-sm text-body-sm text-white"
                     >
                       <span class="font-medium">Oct 26, 2025</span>
-                      <span class="text-secondary text-xs"
+                      <span class="text-slate-400 text-xs"
                         >4:00 PM - 6:00 PM IST</span
                       >
                     </div>
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-on-surface"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-white"
                   >
                     <div class="flex items-center gap-1">
                       <span
-                        class="material-symbols-outlined text-[16px] text-secondary"
+                        class="material-symbols-outlined text-[16px] text-slate-400"
                         >meeting_room</span
                       >
                       <span class="">Lovelace Lab (CS 108)</span>
                     </div>
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-on-surface"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-white"
                   >
                     Dr. M. Banerjee
                   </td>
@@ -2207,12 +2202,12 @@
                       class="inline-flex items-center justify-end gap-space-xs"
                     >
                       <button
-                        class="px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Attendees
                       </button>
                       <button
-                        class="px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Edit
                       </button>
@@ -2221,24 +2216,24 @@
                 </tr>
                 <!-- Session 3 -->
                 <tr
-                  class="meeting-row hover:bg-surface-container-low/60 transition-colors"
+                  class="meeting-row hover:bg-slate-800/40 border border-white/5/60 transition-colors"
                   data-cohort="All Cohorts"
                   data-mstatus="upcoming"
                 >
                   <td class="py-3 pl-space-md px-space-sm">
                     <div class="flex flex-col">
                       <span
-                        class="font-body-md text-body-md text-on-surface font-semibold"
+                        class="font-body-md text-body-md text-white font-semibold"
                         >Weekly Code Jam &amp; Peer Evaluation</span
                       >
-                      <span class="font-body-sm text-secondary text-xs"
+                      <span class="font-body-sm text-slate-400 text-xs"
                         >Live pair problem solving sprint and evaluation</span
                       >
                     </div>
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface bg-surface-container-low px-2 py-0.5 rounded-full font-medium"
+                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-white bg-slate-800/40 border border-white/5 px-2 py-0.5 rounded-full font-medium"
                     >
                       <span
                         class="w-1.5 h-1.5 rounded-full bg-primary inline-block"
@@ -2248,27 +2243,27 @@
                   </td>
                   <td class="py-3 px-space-sm">
                     <div
-                      class="flex flex-col font-body-sm text-body-sm text-on-surface"
+                      class="flex flex-col font-body-sm text-body-sm text-white"
                     >
                       <span class="font-medium">Oct 28, 2025</span>
-                      <span class="text-secondary text-xs"
+                      <span class="text-slate-400 text-xs"
                         >6:00 PM - 8:30 PM IST</span
                       >
                     </div>
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-on-surface"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-white"
                   >
                     <div class="flex items-center gap-1">
                       <span
-                        class="material-symbols-outlined text-[16px] text-secondary"
+                        class="material-symbols-outlined text-[16px] text-slate-400"
                         >computer</span
                       >
                       <span class="">Main Auditorium &amp; Online</span>
                     </div>
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-on-surface"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-white"
                   >
                     Supervisor Board
                   </td>
@@ -2283,12 +2278,12 @@
                       class="inline-flex items-center justify-end gap-space-xs"
                     >
                       <button
-                        class="px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Attendees
                       </button>
                       <button
-                        class="px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Edit
                       </button>
@@ -2297,24 +2292,24 @@
                 </tr>
                 <!-- Session 4 -->
                 <tr
-                  class="meeting-row hover:bg-surface-container-low/60 transition-colors"
+                  class="meeting-row hover:bg-slate-800/40 border border-white/5/60 transition-colors"
                   data-cohort="Division D4, D5"
                   data-mstatus="draft"
                 >
                   <td class="py-3 pl-space-md px-space-sm">
                     <div class="flex flex-col">
                       <span
-                        class="font-body-md text-body-md text-on-surface font-semibold"
+                        class="font-body-md text-body-md text-white font-semibold"
                         >Supervisor Q&amp;A Office Hours</span
                       >
-                      <span class="font-body-sm text-secondary text-xs"
+                      <span class="font-body-sm text-slate-400 text-xs"
                         >Individual consultation for delayed assignments</span
                       >
                     </div>
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface bg-surface-container-low px-2 py-0.5 rounded-full font-medium"
+                      class="inline-flex items-center gap-1 font-body-sm text-body-sm text-white bg-slate-800/40 border border-white/5 px-2 py-0.5 rounded-full font-medium"
                     >
                       <span
                         class="w-1.5 h-1.5 rounded-full bg-outline inline-block"
@@ -2324,33 +2319,33 @@
                   </td>
                   <td class="py-3 px-space-sm">
                     <div
-                      class="flex flex-col font-body-sm text-body-sm text-on-surface"
+                      class="flex flex-col font-body-sm text-body-sm text-white"
                     >
                       <span class="font-medium">Nov 01, 2025</span>
-                      <span class="text-secondary text-xs"
+                      <span class="text-slate-400 text-xs"
                         >3:00 PM - 5:00 PM IST</span
                       >
                     </div>
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-on-surface"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-white"
                   >
                     <div class="flex items-center gap-1">
                       <span
-                        class="material-symbols-outlined text-[16px] text-secondary"
+                        class="material-symbols-outlined text-[16px] text-slate-400"
                         >meeting_room</span
                       >
                       <span class="">Faculty Office Suite 4B</span>
                     </div>
                   </td>
                   <td
-                    class="py-3 px-space-sm font-body-sm text-body-sm text-on-surface"
+                    class="py-3 px-space-sm font-body-sm text-body-sm text-white"
                   >
                     Prof. S. Rangan
                   </td>
                   <td class="py-3 px-space-sm">
                     <span
-                      class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-secondary font-mono"
+                      class="inline-flex items-center gap-1 font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl text-slate-400 font-mono"
                       >Draft</span
                     >
                   </td>
@@ -2359,12 +2354,12 @@
                       class="inline-flex items-center justify-end gap-space-xs"
                     >
                       <button
-                        class="px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Publish
                       </button>
                       <button
-                        class="px-2 py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface hover:bg-surface-container transition-colors"
+                        class="px-2 py-1 rounded font-label-sm text-label-sm text-slate-400 hover:text-white hover:bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl transition-colors"
                       >
                         Edit
                       </button>
@@ -2376,10 +2371,10 @@
           </div>
           <!-- Meeting Footer -->
           <div
-            class="bg-surface-container-low/40 px-space-lg py-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md"
+            class="bg-slate-800/40 border border-white/5/40 px-space-lg py-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md"
           >
             <div
-              class="flex items-center gap-space-md font-label-sm text-label-sm text-secondary leading-relaxed"
+              class="flex items-center gap-space-md font-label-sm text-label-sm text-slate-400 leading-relaxed"
             >
               <span class=""
                 >Showing 4 upcoming synchronized syncs scheduled</span
@@ -2391,36 +2386,36 @@
         <!-- Telemetry Strip: Meeting Metrics -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg mt-space-xl">
           <div
-            class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between"
+            class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-xl p-space-lg shadow-sm flex flex-col justify-between"
           >
             <span
-              class="font-label-sm text-label-sm text-secondary uppercase tracking-wider leading-relaxed"
+              class="font-label-sm text-label-sm text-slate-400 uppercase tracking-wider leading-relaxed"
               >Upcoming Sessions</span
             >
             <div class="flex items-baseline justify-between mt-space-sm">
               <span
-                class="font-headline-md text-headline-md font-semibold text-on-surface leading-tight"
+                class="font-headline-md text-headline-md font-semibold text-white leading-tight"
                 >3</span
               >
-              <span class="font-label-sm text-label-sm text-secondary font-mono"
+              <span class="font-label-sm text-label-sm text-slate-400 font-mono"
                 >THIS CYCLE</span
               >
             </div>
           </div>
 
           <div
-            class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between"
+            class="bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl rounded-xl p-space-lg shadow-sm flex flex-col justify-between"
           >
             <span
-              class="font-label-sm text-label-sm text-secondary uppercase tracking-wider leading-relaxed"
+              class="font-label-sm text-label-sm text-slate-400 uppercase tracking-wider leading-relaxed"
               >Total supervisors Assigned</span
             >
             <div class="flex items-baseline justify-between mt-space-sm">
               <span
-                class="font-headline-md text-headline-md font-semibold text-on-surface leading-tight"
+                class="font-headline-md text-headline-md font-semibold text-white leading-tight"
                 >8</span
               >
-              <span class="font-label-sm text-label-sm text-secondary font-mono"
+              <span class="font-label-sm text-label-sm text-slate-400 font-mono"
                 >ACTIVE ROTATION</span
               >
             </div>
@@ -2438,23 +2433,23 @@
               const viewAttr = tab.getAttribute("data-view");
               if (viewAttr === targetViewId) {
                 tab.classList.add(
-                  "text-on-surface",
+                  "text-white",
                   "border-primary",
                   "font-semibold",
                 );
                 tab.classList.remove(
-                  "text-on-surface-variant",
+                  "text-slate-300",
                   "border-transparent",
                 );
                 tab.setAttribute("aria-current", "page");
               } else {
                 tab.classList.remove(
-                  "text-on-surface",
+                  "text-white",
                   "border-primary",
                   "font-semibold",
                 );
                 tab.classList.add(
-                  "text-on-surface-variant",
+                  "text-slate-300",
                   "border-transparent",
                 );
                 tab.removeAttribute("aria-current");
@@ -2541,20 +2536,20 @@
             tab.addEventListener("click", () => {
               statusTabs.forEach((t) => {
                 t.classList.remove(
-                  "bg-surface-container-lowest",
-                  "text-on-surface",
+                  "bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl",
+                  "text-white",
                   "shadow-sm",
                   "font-medium",
                 );
-                t.classList.add("text-secondary");
+                t.classList.add("text-slate-400");
               });
               tab.classList.add(
-                "bg-surface-container-lowest",
-                "text-on-surface",
+                "bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl",
+                "text-white",
                 "shadow-sm",
                 "font-medium",
               );
-              tab.classList.remove("text-secondary");
+              tab.classList.remove("text-slate-400");
               currentStatus = tab.getAttribute("data-status");
               filterRows();
             });
@@ -2567,20 +2562,20 @@
               currentStatus = "all";
               statusTabs.forEach((t) => {
                 t.classList.remove(
-                  "bg-surface-container-lowest",
-                  "text-on-surface",
+                  "bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl",
+                  "text-white",
                   "shadow-sm",
                   "font-medium",
                 );
-                t.classList.add("text-secondary");
+                t.classList.add("text-slate-400");
               });
               statusTabs[0].classList.add(
-                "bg-surface-container-lowest",
-                "text-on-surface",
+                "bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl",
+                "text-white",
                 "shadow-sm",
                 "font-medium",
               );
-              statusTabs[0].classList.remove("text-secondary");
+              statusTabs[0].classList.remove("text-slate-400");
               filterRows();
             });
           }
@@ -2725,20 +2720,20 @@
             tab.addEventListener("click", () => {
               studentStatusTabs.forEach((t) => {
                 t.classList.remove(
-                  "bg-surface-container-lowest",
-                  "text-on-surface",
+                  "bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl",
+                  "text-white",
                   "shadow-sm",
                   "font-medium",
                 );
-                t.classList.add("text-secondary");
+                t.classList.add("text-slate-400");
               });
               tab.classList.add(
-                "bg-surface-container-lowest",
-                "text-on-surface",
+                "bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl",
+                "text-white",
                 "shadow-sm",
                 "font-medium",
               );
-              tab.classList.remove("text-secondary");
+              tab.classList.remove("text-slate-400");
               currentStudentStatus = tab.getAttribute("data-status");
               filterStudents();
             });
@@ -2790,20 +2785,20 @@
             tab.addEventListener("click", () => {
               meetingStatusTabs.forEach((t) => {
                 t.classList.remove(
-                  "bg-surface-container-lowest",
-                  "text-on-surface",
+                  "bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl",
+                  "text-white",
                   "shadow-sm",
                   "font-medium",
                 );
-                t.classList.add("text-secondary");
+                t.classList.add("text-slate-400");
               });
               tab.classList.add(
-                "bg-surface-container-lowest",
-                "text-on-surface",
+                "bg-slate-900/60 border border-white/10 backdrop-blur-xl shadow-2xl",
+                "text-white",
                 "shadow-sm",
                 "font-medium",
               );
-              tab.classList.remove("text-secondary");
+              tab.classList.remove("text-slate-400");
               currentMeetingStatus = tab.getAttribute("data-mstatus");
               filterMeetings();
             });
@@ -2821,19 +2816,19 @@
       </script>
     </main>
     <footer
-      class="w-full bg-surface-container-lowest border-t border-surface-variant mt-auto"
+      class="fixed bottom-0 left-0 z-50 w-full bg-slate-900 border border-white/10 shadow-2xl border-t border-surface-variant"
     >
       <div
         class="w-full px-gutter-lg py-space-md flex flex-col md:flex-row items-center justify-between gap-space-sm"
       >
         <div
-          class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant"
+          class="flex items-center gap-space-md font-label-sm text-label-sm text-slate-300"
         >
           <span class="">COLLEGE CODING CLUB —&nbsp;</span
           ><span class="hidden md:inline"><br /></span>
         </div>
         <div
-          class="font-label-sm text-label-sm text-on-surface-variant font-mono"
+          class="font-label-sm text-label-sm text-slate-300 font-mono"
         >
           © 2025 DEPARTMENT OF COMPUTER SCIENCE • RESTRICTED ACCESS
         </div>
